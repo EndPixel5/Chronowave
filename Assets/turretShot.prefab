@@ -12,8 +12,7 @@ GameObject:
   - component: {fileID: 4686894490476474642}
   - component: {fileID: 6061121737250884581}
   - component: {fileID: 4178973800555588554}
-  - component: {fileID: -8937556779773834449}
-  - component: {fileID: 1132621753439855907}
+  - component: {fileID: -4897221479632501257}
   m_Layer: 0
   m_Name: turretShot
   m_TagString: Untagged
@@ -160,21 +159,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &-8937556779773834449
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1200965612545037300}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41bf66d3e8ca2ea48ae2e6d709fb702f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 1
-  playerHealth: {fileID: 7653784578923628542, guid: 7943f6b11594c744bb6f9a24628f634c, type: 3}
---- !u!114 &1132621753439855907
+--- !u!114 &-4897221479632501257
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -188,4 +173,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 4
   body: {fileID: 6061121737250884581}
+  damage: 1
   timeAlive: 1200

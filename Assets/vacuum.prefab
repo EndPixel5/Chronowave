@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 2705086920631403782}
   - component: {fileID: 8229608644888723981}
   - component: {fileID: 4169918125781812793}
-  - component: {fileID: -1423502580001271875}
   - component: {fileID: 7842850679323857758}
   m_Layer: 0
   m_Name: vacuum
@@ -160,20 +159,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &-1423502580001271875
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8355514714940965907}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f50534e231bd4f54185fb4fa2ed6a67f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 2
-  playerHealth: {fileID: 7653784578923628542, guid: 7943f6b11594c744bb6f9a24628f634c, type: 3}
 --- !u!114 &7842850679323857758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -188,5 +173,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 4
   health: 4
+  damage: 2
   body: {fileID: 4169918125781812793}
   player: {fileID: 0}

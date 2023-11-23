@@ -7,8 +7,10 @@ public class vacuum : MonoBehaviour
 {
     public float speed = 4;
     public float health = 4;
+    public float damage;
     public Rigidbody2D body;
     public GameObject player;
+
     //public float timeAlive = 1200;
     void Start()
     {
@@ -36,6 +38,10 @@ public class vacuum : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player" || collision.gameObject.tag == "Enemy")
         {
+            if (collision.gameObject.tag == "Player")
+            {
+                collision.gameObject.GetComponent<PlayerHealth>().health -= damage;
+            }
             body.velocity = transform.right * speed * -1;
         }
     }

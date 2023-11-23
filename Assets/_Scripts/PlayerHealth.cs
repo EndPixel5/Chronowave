@@ -12,9 +12,13 @@ public class PlayerHealth : MonoBehaviour
         health = maxHealth;
     }
 
-    public void takeDamage(float damage)
+    private void Update()
+    {
+        if (health <= 0) { Destroy(gameObject); }
+    }
+    /*public void takeDamage(float damage)
     {
         health -= damage;
-        if(health <= 0) {DestroyImmediate(gameObject, true); }
-    }
+        if(health <= 0) {Destroy(gameObject); }
+    }*/
 }

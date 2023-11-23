@@ -6,6 +6,7 @@ public class turretShotScript : MonoBehaviour
 {
     public float speed = 4;
     public Rigidbody2D body;
+    public float damage;
     public float timeAlive = 1200;
     void Start()
     {
@@ -21,6 +22,7 @@ public class turretShotScript : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            collision.gameObject.GetComponent<PlayerHealth>().health -= damage;
             Destroy(gameObject);
         }
     }
