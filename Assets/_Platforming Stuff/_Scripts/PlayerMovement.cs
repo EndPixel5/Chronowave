@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEditor.Tilemaps;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     // Start is called before the first frame update
     /*public float moveForce;
@@ -14,38 +14,41 @@ public class PlayerController : MonoBehaviour
     public float speed;
     public float jump;
     private float Move;
-    
+    Vector2 movement;
     public bool isJumping;
     //private float jumpsUsed;
-    private bool isFacingRight;
+    //private bool isFacingRight;
     private bool jumpCheck;
-
+    public Animator animator;
     private float collisions;
     void Start()
     {
         body = gameObject.GetComponent<Rigidbody2D>();
-        isFacingRight = true;
+        animator = gameObject.GetComponent<Animator>();
         collisions = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Inputs();    
-
+        Inputs();
+        movement.x = Input.GetAxis("Horizontal");
+        animator.SetFloat("Horizontal", movement.x * speed);
+        animator.SetFloat("Speed", movement.sqrMagnitude);
     }
 
     private void FixedUpdate()
     {
-        Movement();       
+        Movement();
+
+        
     }
 
     void Inputs()
     {
         Move = Input.GetAxis("Horizontal");
 
-        if (Move < 0 && isFacingRight == true) Flip();
-        else if (Move > 0 && isFacingRight == false) Flip();
+        
 
         if (Input.GetButtonDown("Jump") && isJumping == false)
         //if (Input.GetButtonDown("Jump") && jumpsUsed < 2)
@@ -65,12 +68,7 @@ public class PlayerController : MonoBehaviour
         jumpCheck = false;
     }
 
-    private void Flip()
-    {
-        isFacingRight = !isFacingRight;
-
-        transform.Rotate(0, 180, 0);
-    }
+   
 
     private void OnCollisionEnter2D(Collision2D collision)
     {

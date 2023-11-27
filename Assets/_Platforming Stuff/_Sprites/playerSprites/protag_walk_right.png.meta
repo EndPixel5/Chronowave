@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5021094c385e3f748a6b3b941c036099
+guid: 626aa117858494a49b60fb70c9cbb138
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 45
+  spritePixelsToUnits: 25
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: michaelwalkplatleft_0
+      name: protag_walk_right_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 823c755dd1e97ed44829f207370abe57
-      internalID: 1698818530
+      spriteID: 469c4419c7bf8f34882c8720b5a45778
+      internalID: -2076485221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: michaelwalkplatleft_1
+      name: protag_walk_right_1
       rect:
         serializedVersion: 2
         x: 24
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1092bf7f46ff5d499ddd59f4a3dd782
-      internalID: 393781730
+      spriteID: 07e93ae3cb1a2d849aad950b5a32b4df
+      internalID: 4744084
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: michaelwalkplatleft_2
+      name: protag_walk_right_2
       rect:
         serializedVersion: 2
         x: 48
@@ -166,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6cf7334098ee4364ea8559bd6f39175b
-      internalID: 720419591
+      spriteID: 1920b3cbf68164846a1aa297a97900b8
+      internalID: -806454746
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: michaelwalkplatleft_3
+      name: protag_walk_right_3
       rect:
         serializedVersion: 2
         x: 72
@@ -187,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6243c349e0157764fb9befa00254c664
-      internalID: 349704691
+      spriteID: 2c6161a83e8e6fe429d01b7cce8d1aa7
+      internalID: -467481881
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: michaelwalkplatleft_4
+      name: protag_walk_right_4
       rect:
         serializedVersion: 2
         x: 96
@@ -208,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85804cd99ae7bbf45800bd2b82ec04b1
-      internalID: 517591952
+      spriteID: 4ca4e018cfb587341be1aee1965f047b
+      internalID: 222868972
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: michaelwalkplatleft_5
+      name: protag_walk_right_5
       rect:
         serializedVersion: 2
         x: 120
@@ -229,14 +229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8766fc3e699e34943a21b7dc76b9ca4e
-      internalID: 490093942
+      spriteID: abd7038defabaa74f89ffdc5673c4ca0
+      internalID: -586642559
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: michaelwalkplatleft_6
+      name: protag_walk_right_6
       rect:
         serializedVersion: 2
         x: 144
@@ -250,14 +250,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10580924d8a45fe4e8eae7abe4e9464d
-      internalID: 1049654392
+      spriteID: a80fba32427754b47b3f680ae695787e
+      internalID: -1952946325
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: michaelwalkplatleft_7
+      name: protag_walk_right_7
       rect:
         serializedVersion: 2
         x: 168
@@ -271,8 +271,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cec6e4b5fa6f59b418c96a3ad20a06f6
-      internalID: 859584147
+      spriteID: 5fdcd9acdbce9674abc5f7e049613a28
+      internalID: 577125818
       vertices: []
       indices: 
       edges: []
@@ -288,14 +288,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      michaelwalkplatleft_0: 1698818530
-      michaelwalkplatleft_1: 393781730
-      michaelwalkplatleft_2: 720419591
-      michaelwalkplatleft_3: 349704691
-      michaelwalkplatleft_4: 517591952
-      michaelwalkplatleft_5: 490093942
-      michaelwalkplatleft_6: 1049654392
-      michaelwalkplatleft_7: 859584147
+      protag_walk_right_0: -2076485221
+      protag_walk_right_1: 4744084
+      protag_walk_right_2: -806454746
+      protag_walk_right_3: -467481881
+      protag_walk_right_4: 222868972
+      protag_walk_right_5: -586642559
+      protag_walk_right_6: -1952946325
+      protag_walk_right_7: 577125818
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

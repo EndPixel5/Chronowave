@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 68e453d6370b58f499b339fb7532b868
+guid: 3ee9771ba612a3e4eb4a55087bbc78aa
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: michaelwalkplat_0
+      name: protag_walk_left_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e994cd8e6852cce4997a18daf442b728
-      internalID: 202365066
+      spriteID: c8c9aea541f35b742a318a836c17e569
+      internalID: 282850180
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: michaelwalkplat_1
+      name: protag_walk_left_1
       rect:
         serializedVersion: 2
         x: 24
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ef58c4f061aa0242b719b05e6f3fc9e
-      internalID: 1395862683
+      spriteID: 03f87536ba584f84c9255e2a818c35b1
+      internalID: 1306071487
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: michaelwalkplat_2
+      name: protag_walk_left_2
       rect:
         serializedVersion: 2
         x: 48
@@ -166,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77c1525aeb1ba2544b9ac152deba459a
-      internalID: 1265941420
+      spriteID: e58703c9d514e3a4c92dbf63e680c1a6
+      internalID: -2016634871
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: michaelwalkplat_3
+      name: protag_walk_left_3
       rect:
         serializedVersion: 2
         x: 72
@@ -187,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ebaa81d58c84be4685eb9ff74fe38ee
-      internalID: 902446006
+      spriteID: 2ad268690b0bd1b4ea27a0c8faaa63db
+      internalID: -1178036205
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: michaelwalkplat_4
+      name: protag_walk_left_4
       rect:
         serializedVersion: 2
         x: 96
@@ -208,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c942affa41ba944ca983006b1160774
-      internalID: -122001181
+      spriteID: e6d21beea1f8366489736f8d7cfb432a
+      internalID: -877360781
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: michaelwalkplat_5
+      name: protag_walk_left_5
       rect:
         serializedVersion: 2
         x: 120
@@ -229,14 +229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fddcde87cfded874e9c835949c1daa2f
-      internalID: -1534137072
+      spriteID: cb3574804f791e9448fcd19a86645dfb
+      internalID: -56644732
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: michaelwalkplat_6
+      name: protag_walk_left_6
       rect:
         serializedVersion: 2
         x: 144
@@ -250,14 +250,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 462e16b25903f424f9017333fddfc7d5
-      internalID: -1127499083
+      spriteID: 2c469f4e9db7c6b4388f9ae256aefba8
+      internalID: -1990714191
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: michaelwalkplat_7
+      name: protag_walk_left_7
       rect:
         serializedVersion: 2
         x: 168
@@ -271,8 +271,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 752314d9984c3f44e9bf02aa2488fe48
-      internalID: -1390791850
+      spriteID: 13a86995859e09e448fdd8b3c0ca862c
+      internalID: -701033299
       vertices: []
       indices: 
       edges: []
@@ -288,14 +288,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      michaelwalkplat_0: 202365066
-      michaelwalkplat_1: 1395862683
-      michaelwalkplat_2: 1265941420
-      michaelwalkplat_3: 902446006
-      michaelwalkplat_4: -122001181
-      michaelwalkplat_5: -1534137072
-      michaelwalkplat_6: -1127499083
-      michaelwalkplat_7: -1390791850
+      protag_walk_left_0: 282850180
+      protag_walk_left_1: 1306071487
+      protag_walk_left_2: -2016634871
+      protag_walk_left_3: -1178036205
+      protag_walk_left_4: -877360781
+      protag_walk_left_5: -56644732
+      protag_walk_left_6: -1990714191
+      protag_walk_left_7: -701033299
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
