@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     /*public float moveForce;
     public float jumpForce;*/
     private Rigidbody2D body;
-    public GameObject childSprite;
+    //public GameObject childSprite;
     private bool isFacingRight;
     public float speed;
     public float jump;
@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
         body = gameObject.GetComponent<Rigidbody2D>();
         animator = gameObject.GetComponent<Animator>();
         collisions = 0;
-        isFacingRight = true;
+        //isFacingRight = true;
     }
 
     // Update is called once per frame
