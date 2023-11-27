@@ -6,6 +6,7 @@ public class basicAttackController : MonoBehaviour
 {
 
     // Update is called once per frame
+    public float damage = 1;
     public float speed = 7;
     public Rigidbody2D body;
     public float timeAlive = 1200;
@@ -23,6 +24,12 @@ public class basicAttackController : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "Enemy")
+        {
+            collision.gameObject.GetComponent<EnemyHealth>().health -= damage;
+
+            Destroy(gameObject);
+        }
+        else if (collision.gameObject.tag == "Enemy_Attack")
         {
             Destroy(gameObject);
         }

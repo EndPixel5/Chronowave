@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class turretShotScript : MonoBehaviour
+public class basicEnemyShotScript : MonoBehaviour
 {
     public float speed = 4;
     public Rigidbody2D body;
@@ -20,9 +20,14 @@ public class turretShotScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        
         if (collision.gameObject.tag == "Player")
         {
             collision.gameObject.GetComponent<PlayerHealth>().health -= damage;
+            Destroy(gameObject);
+        }
+        else if (collision.gameObject.tag == "Player_Attack")
+        {
             Destroy(gameObject);
         }
     }
