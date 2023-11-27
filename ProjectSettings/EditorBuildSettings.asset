@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/PlatformingTest.unity
+    path: Assets/Scenes/Moon Platforming.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Lab room.unity
+    guid: da5feb70334c8aa46ac68e2f1e233545
   m_configObjects: {}

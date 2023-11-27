@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4169918125781812793}
   - component: {fileID: 7842850679323857758}
   - component: {fileID: -8216545452029310395}
+  - component: {fileID: 5958426626612934534}
   m_Layer: 0
   m_Name: vacuum
   m_TagString: Enemy
@@ -76,7 +77,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 0.12641507, b: 0.12641507, a: 1}
   m_FlipX: 0
@@ -175,7 +176,6 @@ MonoBehaviour:
   speed: 4
   damage: 2
   body: {fileID: 4169918125781812793}
-  player: {fileID: 0}
 --- !u!114 &-8216545452029310395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,3 +189,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 4
+--- !u!114 &5958426626612934534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8355514714940965907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 572a9d6fe8d87824f920e060c347faa8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  despawnTimer: 250

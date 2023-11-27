@@ -10,6 +10,7 @@ TagManager:
   - Player_Attack
   - Enemy_Attack
   - Weak_Attack
+  - Wall
   layers:
   - Default
   - TransparentFX

@@ -30,9 +30,9 @@ public class coalAttack : MonoBehaviour
             collision.gameObject.GetComponent<PlayerHealth>().health -= damage;
             Destroy(gameObject);
         }
-        /*if (collision.gameObject.tag == "Death")
+        if (collision.gameObject.tag == "Death")
         {
             Destroy(gameObject);
-        }*/
+        }
     }
 }
