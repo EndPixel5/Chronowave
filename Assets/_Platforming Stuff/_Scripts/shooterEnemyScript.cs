@@ -7,10 +7,7 @@ public class shooterEnemyScript : MonoBehaviour
     // Start is called before the first frame update
     public float speed = 2;
   //  public float health = 2;
-    public GameObject shot;
-    private float attackTimer = 85;
-    private bool attackAgain = false;
-    private float secondAttackTimer = 25; //(have 25 if true);
+    
     public Rigidbody2D body;
     private GameObject player;
     private float start;
@@ -28,7 +25,7 @@ public class shooterEnemyScript : MonoBehaviour
     void FixedUpdate()
     {
         Movement();
-        AttackCode();
+       // AttackCode();
       //  if (health <= 0) { Destroy(gameObject); }
 
     }
@@ -47,7 +44,7 @@ public class shooterEnemyScript : MonoBehaviour
         }
     }
 
-    void AttackCode()
+   /* void AttackCode()
     {
         if (attackAgain)
         {
@@ -69,5 +66,5 @@ public class shooterEnemyScript : MonoBehaviour
             attackTimer = 85;
             attackAgain = (Random.value > 0.5f);
         }
-    }
+    }*/
 }
