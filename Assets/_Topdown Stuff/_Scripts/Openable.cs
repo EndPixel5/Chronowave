@@ -15,11 +15,12 @@ public class Openable : Interactable
     {
         if (isOpen)
         {
+            sr.sortingLayerID = default;
             sr.sprite = closed;
         }
         else
         {
-            sr.sortingLayerID = 0;
+            sr.sortingLayerID = SortingLayer.NameToID("inside");
             sr.sprite = open;
         }
         isOpen = !isOpen;
@@ -28,6 +29,7 @@ public class Openable : Interactable
     private void Start()
     {
         sr = GetComponent<SpriteRenderer>();
+        sr.sortingLayerID = default;  
         sr.sprite = closed;
     }
 }
