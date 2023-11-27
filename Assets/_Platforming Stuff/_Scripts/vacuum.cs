@@ -11,6 +11,7 @@ public class vacuum : MonoBehaviour
     public Rigidbody2D body;
     private GameObject player;
 
+
     //public float timeAlive = 1200;
     void Start()
     {
@@ -40,11 +41,13 @@ public class vacuum : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player" || collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "Wall")
         {
+            body.velocity = transform.right * speed * -1;
             if (collision.gameObject.tag == "Player")
             {
                 collision.gameObject.GetComponent<PlayerHealth>().health -= damage;
+                Destroy(gameObject);
             }
-            body.velocity = transform.right * speed * -1;
+            
         }
         if (collision.gameObject.tag == "Death")
         {
