@@ -19,6 +19,7 @@ public class Openable : Interactable
         }
         else
         {
+            sr.sortingLayerID = 0;
             sr.sprite = open;
         }
         isOpen = !isOpen;
