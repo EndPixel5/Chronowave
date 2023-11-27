@@ -29,7 +29,7 @@ public class basicAttackController : MonoBehaviour
 
             Destroy(gameObject);
         }
-        else if (collision.gameObject.tag == "Enemy_Attack")
+        else if (collision.gameObject.tag == "Weak_Attack" || collision.gameObject.tag == "Weak_Attack")
         {
             Destroy(gameObject);
         }

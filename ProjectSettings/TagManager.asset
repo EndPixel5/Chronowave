@@ -9,6 +9,7 @@ TagManager:
   - Death
   - Player_Attack
   - Enemy_Attack
+  - Weak_Attack
   layers:
   - Default
   - TransparentFX
