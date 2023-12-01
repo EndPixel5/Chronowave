@@ -174,4 +174,4 @@ MonoBehaviour:
   speed: 4
   body: {fileID: 6061121737250884581}
   damage: 1
-  timeAlive: 1200
+  timeAlive: 250

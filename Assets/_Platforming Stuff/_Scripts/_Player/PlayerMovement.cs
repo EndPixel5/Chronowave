@@ -5,15 +5,21 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    // Start is called before the first frame update
     /*public float moveForce;
     public float jumpForce;*/
     private Rigidbody2D body;
     //public GameObject childSprite;
-    private bool isFacingRight;
+    //private bool isFacingRight;
+    //private float direction = 1;
     public float speed;
     public float jump;
     private float Move;
+
+    public float knockback;
+    public float kbTimer;
+    public float kbTotalTime;
+    public bool knockRight;
+
     Vector2 movement;
     public bool isJumping;
     //private float jumpsUsed;
@@ -21,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
     private bool jumpCheck;
     public Animator animator;
     private float collisions;
+
     void Start()
     {
         body = gameObject.GetComponent<Rigidbody2D>();
@@ -60,13 +67,30 @@ public class PlayerMovement : MonoBehaviour
 
     private void Movement()
     {
-        body.velocity = new Vector2(Move * speed, body.velocity.y);
-        if (jumpCheck == true)
+        if (kbTimer <= 0)
         {
-            isJumping = true;
-            body.AddForce(new Vector2(0, jump), ForceMode2D.Impulse);
+            body.velocity = new Vector2(Move * speed, body.velocity.y);
+            if (jumpCheck == true)
+            {
+                isJumping = true;
+                body.AddForce(new Vector2(0, jump), ForceMode2D.Impulse);
+            }
+            jumpCheck = false;
         }
-        jumpCheck = false;
+        else
+        {
+            if (knockRight)
+            {
+                if(!isJumping) body.velocity = new Vector2(-knockback, 1);
+                else body.velocity = new Vector2(-knockback, body.velocity.y);
+            }
+            else
+            {
+                if (!isJumping) body.velocity = new Vector2(knockback, 1);
+                else body.velocity = new Vector2(knockback, body.velocity.y);
+            }
+            kbTimer --;
+        }
     }
 
    private void AnimationStuff()

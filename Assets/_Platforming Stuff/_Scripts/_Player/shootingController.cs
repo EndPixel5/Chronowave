@@ -57,6 +57,6 @@ public class shootingController : MonoBehaviour
     void Shoot()
     {
         Instantiate(playerAttackPrefab, gameObject.transform.position, gameObject.transform.rotation);
-        attackTimer = 25;
+        attackTimer = 20;
     }
 }

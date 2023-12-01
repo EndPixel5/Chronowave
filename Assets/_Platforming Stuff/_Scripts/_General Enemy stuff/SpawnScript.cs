@@ -9,13 +9,14 @@ public class ShootingSpawnScript : MonoBehaviour
     public GameObject enemy;
     public float respawnTimer = 0; //250 when waiting to respawn
     public float givenDist;
+    public bool onlySpawnOnce;
     private void FixedUpdate()
     {
         if(respawnTimer > 0) { respawnTimer--; }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "MainCamera" && respawnTimer == 0)
+        if (collision.gameObject.tag == "MainCamera" && respawnTimer == 0 && onlySpawnOnce == false)
         {
             GameObject newEnemy = Instantiate(enemy, gameObject.transform.position, gameObject.transform.rotation);
             

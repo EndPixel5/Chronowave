@@ -15,7 +15,7 @@ public class basicAttackController : MonoBehaviour
         body.velocity = transform.right * speed;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if(timeAlive == 0) { Destroy(gameObject); }
         timeAlive--;
