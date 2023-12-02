@@ -3,16 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Platform
-  - Enemy
-  - Death
-  - Player_Attack
-  - Enemy_Attack
-  - Weak_Attack
-  - Wall
-  - TD_interactable
-  - NPC
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -47,12 +38,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: underneath
-    uniqueID: 2380728795
-    locked: 0
-  - name: inside
-    uniqueID: 1875951001
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

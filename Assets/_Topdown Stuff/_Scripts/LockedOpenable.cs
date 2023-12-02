@@ -2,17 +2,33 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LockedOpenable : MonoBehaviour
+public class LockedOpenable : Interactable
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Sprite open;
+    public Sprite closed;
+    public Vector3 place;
+    private SpriteRenderer sr;
+    private bool isOpen;
+    public GameObject part;
 
-    // Update is called once per frame
-    void Update()
+    public override void Interact()
     {
-        
+        if (isOpen)
+        {
+            sr.sortingLayerID = default;
+            sr.sprite = closed;
+            
+        }
+        else
+        {
+            sr.sortingLayerID = SortingLayer.NameToID("inside");
+            sr.sprite = open;
+            Instantiate(part, place, gameObject.transform.rotation);
+        }
+        isOpen = !isOpen;
+    }
+    public void Start()
+    {
+        isOpen = true;
     }
 }
