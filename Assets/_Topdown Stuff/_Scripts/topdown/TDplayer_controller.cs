@@ -18,10 +18,11 @@ public class TDplayer_controller : MonoBehaviour
     private List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
 
     public GameObject interactIcon;
-
+    public bool canMove;
     void Start()
     {
         rb.GetComponent<Rigidbody2D>();
+        canMove = true;
     }
 
     // Update is called once per frame
@@ -35,9 +36,12 @@ public class TDplayer_controller : MonoBehaviour
 
     private void FixedUpdate()
     {
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+       if(canMove) 
+        {
+            movement.x = Input.GetAxisRaw("Horizontal");
+            movement.y = Input.GetAxisRaw("Vertical");
+            rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        }
 
        
     }
