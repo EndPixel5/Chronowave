@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D body;
     //public GameObject childSprite;
     //private bool isFacingRight;
-    //private float direction = 1;
+    private float direction = 1;
     public float speed;
     public float jump;
     private float Move;
@@ -33,6 +33,7 @@ public class PlayerMovement : MonoBehaviour
         body = gameObject.GetComponent<Rigidbody2D>();
         animator = gameObject.GetComponent<Animator>();
         collisions = 0;
+        animator.SetFloat("Horizontal", direction);
         //isFacingRight = true;
     }
 
@@ -40,6 +41,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         Inputs();
+        AnimationStuff();
         /*movement.x = Input.GetAxis("Horizontal");
         animator.SetFloat("Horizontal", movement.x * speed);
         animator.SetFloat("Speed", movement.sqrMagnitude);*/
@@ -48,7 +50,7 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         Movement();
-        AnimationStuff();
+        
         
     }
 
@@ -56,7 +58,8 @@ public class PlayerMovement : MonoBehaviour
     {
         Move = Input.GetAxis("Horizontal");
         movement.x = Move;
-        
+        if (movement.x > 0) direction = 1;
+        else if(movement.x < 0) direction = -1;
 
         if (Input.GetButtonDown("Jump") && isJumping == false)
         //if (Input.GetButtonDown("Jump") && jumpsUsed < 2)
@@ -95,7 +98,7 @@ public class PlayerMovement : MonoBehaviour
 
    private void AnimationStuff()
     {
-        animator.SetFloat("Horizontal", movement.x * speed);
+        animator.SetFloat("Horizontal", direction);// movement.x); // * speed);
         animator.SetFloat("Speed", movement.sqrMagnitude);
     }
 
