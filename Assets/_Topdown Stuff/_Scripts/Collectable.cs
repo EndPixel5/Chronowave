@@ -5,14 +5,19 @@ using UnityEngine;
 
 public class Collectable : Interactable
 {
-    private GameObject thi;
-    private void Start()
-    {
-        thi = GetComponent<GameObject>();
-    }
+    
+    public GameObject player;
+   
     public override void Interact()
     {
-       
+        if (gameObject.CompareTag("key")) 
+        {
+            player.GetComponent<Player_Interaction>().keys++;
+        }
+        if (gameObject.CompareTag("part"))
+        {
+            player.GetComponent<Player_Interaction>().parts++;
+        }
 
         Destroy(gameObject);
     }
