@@ -23,6 +23,7 @@ public class TDplayer_controller : MonoBehaviour
     {
         rb.GetComponent<Rigidbody2D>();
         canMove = true;
+        interactIcon.SetActive(false);
     }
 
     // Update is called once per frame

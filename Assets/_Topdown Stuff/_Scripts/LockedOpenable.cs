@@ -15,6 +15,7 @@ public class LockedOpenable : Interactable
     public GameObject yessir;
     public GameObject text;
     public Vector3 textVec;
+    public GameObject e;
 
     public override void Interact()
     {
@@ -57,4 +58,5 @@ public class LockedOpenable : Interactable
         sr.sprite = closed;
         sr.sortingLayerID = default;
     }
+
 }

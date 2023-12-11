@@ -7,6 +7,7 @@ public class Collectable : Interactable
 {
     
     public GameObject player;
+
    
     public override void Interact()
     {
@@ -21,4 +22,6 @@ public class Collectable : Interactable
 
         Destroy(gameObject);
     }
+
+   
 }

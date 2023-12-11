@@ -5,6 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(BoxCollider2D))]
 public abstract class Interactable : MonoBehaviour
 {
+   
 
     private void Reset()
     {
@@ -24,5 +25,5 @@ public abstract class Interactable : MonoBehaviour
             collision.GetComponent<TDplayer_controller>().CloseInteractableIcon();
     }
 
-
+   
 }
