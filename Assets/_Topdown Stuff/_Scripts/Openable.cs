@@ -11,6 +11,8 @@ public class Openable : Interactable
     private SpriteRenderer sr;
     private bool isOpen;
 
+   
+
     public override void Interact()
     {
         if (isOpen)
@@ -25,6 +27,8 @@ public class Openable : Interactable
         }
         isOpen = !isOpen;
     }
+
+    
 
     private void Start()
     {
