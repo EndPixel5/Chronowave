@@ -1084,7 +1084,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.7878776
+  orthographic size: 6.8873158
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1109,7 +1109,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.59, y: 2.72, z: -10}
+  m_LocalPosition: {x: -7.6383743, y: -2.9408467, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2779,7 +2779,7 @@ MonoBehaviour:
   keysHeld: 0
   ah: {fileID: 9180561886053683795, guid: 9f1f58cec809d8344a68dbc8c68d61d6, type: 3}
   yessir: {fileID: 1757949929}
-  text: {fileID: 280170664537219892, guid: 26d00ec4739ce5b4281e7a2b7ac95fb4, type: 3}
+  text: {fileID: 4686047081430423952, guid: 4485b68eb99d9bd40ab8f11575d85fb6, type: 3}
   textVec: {x: 0, y: 0, z: 0}
   e: {fileID: 7744525809469278153, guid: 1bd57eaaca6d72a4cbd28341e69a9a0e, type: 3}
 --- !u!1 &1757949929
@@ -2863,7 +2863,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.036272526, y: 0.050780535}
+  m_Offset: {x: 0.036272526, y: 0.107657194}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2874,7 +2874,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1056108, y: 0.77740145}
+  m_Size: {x: 1.1056108, y: 0.6636481}
   m_EdgeRadius: 0
 --- !u!212 &1789141292
 SpriteRenderer:
@@ -2994,7 +2994,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.01734066, y: 0.08114314}
+  m_Offset: {x: 0.071153164, y: -0.017098308}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3005,7 +3005,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0623016, y: 0.8653321}
+  m_Size: {x: 2.2113638, y: 2.054571}
   m_EdgeRadius: 0
 --- !u!212 &1827307458
 SpriteRenderer:
@@ -3087,8 +3087,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 504802909}
-  partsReq: 1
+  partsReq: 2
   partsHeld: 0
+  done: 0
   text: {fileID: 280170664537219892, guid: 26d00ec4739ce5b4281e7a2b7ac95fb4, type: 3}
   textVec: {x: 0, y: 0, z: 0}
 --- !u!1 &1848439933 stripped

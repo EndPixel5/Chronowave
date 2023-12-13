@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Tilemaps;
+using TMPro;
+//using UnityEditor.Tilemaps;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -27,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
     private bool jumpCheck;
     public Animator animator;
     private float collisions;
-
+    
     void Start()
     {
         body = gameObject.GetComponent<Rigidbody2D>();
@@ -37,11 +38,13 @@ public class PlayerMovement : MonoBehaviour
         //isFacingRight = true;
     }
 
+    
     // Update is called once per frame
     void Update()
     {
         Inputs();
         AnimationStuff();
+       
         /*movement.x = Input.GetAxis("Horizontal");
         animator.SetFloat("Horizontal", movement.x * speed);
         animator.SetFloat("Speed", movement.sqrMagnitude);*/

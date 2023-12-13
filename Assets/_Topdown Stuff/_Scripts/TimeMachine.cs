@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class TimeMachine : Interactable
 {
@@ -9,7 +11,7 @@ public class TimeMachine : Interactable
     public GameObject player;
     public int partsReq;
     public int partsHeld;
-  
+    public int done = 0;
     public GameObject text;
     public Vector3 textVec;
 
@@ -24,6 +26,7 @@ public class TimeMachine : Interactable
             textVec.y = player.transform.position.y - 4;
             Instantiate(text, textVec, player.transform.rotation);
             partsHeld = 0;
+            done++;
         }
        
     }
@@ -33,6 +36,9 @@ public class TimeMachine : Interactable
     private void Update()
     {
         partsHeld = player.GetComponent<Player_Interaction>().parts;
+        if (done > 0) {
+            SceneManager.LoadScene(0);
+        }
     }
 
 }
