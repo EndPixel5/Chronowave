@@ -26,7 +26,7 @@ public class basicEnemyShotScript : MonoBehaviour
             collision.gameObject.GetComponent<PlayerHealth>().health -= damage;
             Destroy(gameObject);
         }
-        else if (collision.gameObject.tag == "Player_Attack")
+        else if (collision.gameObject.tag == "Player_Attack" || collision.gameObject.tag == "Platform")
         {
             Destroy(gameObject);
         }
@@ -34,6 +34,7 @@ public class basicEnemyShotScript : MonoBehaviour
         {
             timeAlive -= 30;
         }
+
     }
 
 }

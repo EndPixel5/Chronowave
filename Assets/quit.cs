@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class quit : MonoBehaviour
 {
@@ -13,7 +15,7 @@ public class quit : MonoBehaviour
         {
             Application.Quit();
         }
-
+        
     }
    /* private void FixedUpdate()
     {
