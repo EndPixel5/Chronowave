@@ -44,7 +44,7 @@ InputManager:
     negativeButton: 
     positiveButton: space
     altNegativeButton: 
-    altPositiveButton: mouse 0
+    altPositiveButton: z
     gravity: 1000
     dead: 0.001
     sensitivity: 1000
@@ -55,12 +55,12 @@ InputManager:
     joyNum: 0
   - serializedVersion: 3
     m_Name: Fire2
-    descriptiveName: 
+    descriptiveName: interact
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: left alt
+    positiveButton: e
     altNegativeButton: 
-    altPositiveButton: mouse 1
+    altPositiveButton: x
     gravity: 1000
     dead: 0.001
     sensitivity: 1000

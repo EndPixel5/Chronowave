@@ -22,14 +22,19 @@ public class TDplayer_controller : MonoBehaviour
     void Start()
     {
         rb.GetComponent<Rigidbody2D>();
-        canMove = true;
+       // canMove = true;
         interactIcon.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E)) 
+        if (GameObject.FindGameObjectsWithTag("textbox").Length == 0)
+        {
+            canMove = true;
+        }
+
+            if (Input.GetAxis("Fire2")  == 1) 
         { 
             Checkinteraction();
         }

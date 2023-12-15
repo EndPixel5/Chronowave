@@ -1,11 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class titleScript : MonoBehaviour
 {
     private bool begin = false;
+    public titleAudio audioManager;
+    private int timer = 100;
+
+    
     void Update()
     {
         if (Input.GetAxisRaw("Fire1") != 0 && begin == false)
@@ -21,12 +26,13 @@ public class titleScript : MonoBehaviour
     {
         if (begin)
         {
-            //timer++;
-            //if (timer >= 35)
-            //{
+            audioManager.PlaySound(audioManager.start);
+            if (timer > 0) { timer--; } 
+            else 
+            {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-
-            //}
+            }
+            
         }
     }
 }

@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lab room.unity
     guid: da5feb70334c8aa46ac68e2f1e233545
+  - enabled: 1
+    path: Assets/Scenes/Thanks.unity
+    guid: f092e952d2ff8bb49b69c2aa0f7da413
   m_configObjects: {}

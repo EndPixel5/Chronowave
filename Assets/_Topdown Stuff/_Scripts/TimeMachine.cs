@@ -37,7 +37,7 @@ public class TimeMachine : Interactable
     {
         partsHeld = player.GetComponent<Player_Interaction>().parts;
         if (done > 0) {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(3);
         }
     }
 

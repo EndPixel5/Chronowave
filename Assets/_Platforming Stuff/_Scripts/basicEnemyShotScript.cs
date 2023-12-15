@@ -14,7 +14,7 @@ public class basicEnemyShotScript : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if (timeAlive == 0) { Destroy(gameObject); }
+        if (timeAlive <= 0) { Destroy(gameObject); }
         timeAlive--;
     }
 
@@ -29,6 +29,10 @@ public class basicEnemyShotScript : MonoBehaviour
         else if (collision.gameObject.tag == "Player_Attack")
         {
             Destroy(gameObject);
+        }
+        else if (collision.gameObject.tag != "Player")
+        {
+            timeAlive -= 30;
         }
     }
 

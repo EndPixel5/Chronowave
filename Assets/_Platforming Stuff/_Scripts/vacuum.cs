@@ -28,7 +28,10 @@ public class vacuum : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        /*if(body.velocity.x < transform.right * speed)
+        {
+            body.velocity = transform.right * speed;
+        }*/
     }
 
    /* private void OnTriggerEnter2D(Collider2D collision)
@@ -69,6 +72,15 @@ public class vacuum : MonoBehaviour
         if (collision.gameObject.tag == "Death")
         {
             Destroy(gameObject);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Wall")
+        {
+            transform.Rotate(0, 180, 0);
+            body.velocity = transform.right * speed;
         }
     }
 

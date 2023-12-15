@@ -10,6 +10,7 @@ public class ShootingSpawnScript : MonoBehaviour
     public float respawnTimer = 0; //250 when waiting to respawn
     public float givenDist;
     public bool onlySpawnOnce;
+    private bool didSpawn;
     private void FixedUpdate()
     {
         if(respawnTimer > 0) { respawnTimer--; }
@@ -28,6 +29,21 @@ public class ShootingSpawnScript : MonoBehaviour
                 {
                     newEnemy.GetComponent<ovenman>().maxDist = givenDist;
                 }
+        }
+
+        if (collision.gameObject.tag == "MainCamera" && respawnTimer == 0 && onlySpawnOnce == true && didSpawn == false)
+        {
+            GameObject newEnemy = Instantiate(enemy, gameObject.transform.position, gameObject.transform.rotation);
+            didSpawn = true;
+
+            if (enemy.name == "shooterEnemy")
+            {
+                newEnemy.GetComponent<shooterEnemyScript>().maxDist = givenDist;
+            }
+            else if (enemy.name == "ovenman")
+            {
+                newEnemy.GetComponent<ovenman>().maxDist = givenDist;
+            }
         }
     }
 

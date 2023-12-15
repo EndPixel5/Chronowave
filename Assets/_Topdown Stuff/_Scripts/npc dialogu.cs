@@ -30,7 +30,7 @@ public class npcdialogu : Interactable
     }
 
     // Update is called once per frame
-    void Update()
+    /*void Update()
     {
        
         if (player.GetComponent<TDplayer_controller>().canMove == false && text.GetComponent<textbox>().count == text.GetComponent<textbox>().text.Length)
@@ -40,5 +40,5 @@ public class npcdialogu : Interactable
                 player.GetComponent<TDplayer_controller>().canMove = true;
             }
         }
-    }
+    }*/
 }

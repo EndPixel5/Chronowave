@@ -43,13 +43,13 @@ public class LockedOpenable : Interactable
     private void Update()
     {
         keysHeld = player.GetComponent<Player_Interaction>().keys;
-        if (player.GetComponent<TDplayer_controller>().canMove == false) 
+        /*if (player.GetComponent<TDplayer_controller>().canMove == false) 
         {
             if(Input.GetKeyDown(KeyCode.Space)) 
             {
                 player.GetComponent<TDplayer_controller>().canMove = true;
             }
-        }
+        }*/
     }
     public void Start()
     {

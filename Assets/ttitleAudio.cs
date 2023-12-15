@@ -8,13 +8,13 @@ public class titleAudio : MonoBehaviour
 
     [Header("          Audio Sources            ")]
     [SerializeField] private AudioSource[] musicSourceArray;
-   // [SerializeField] private AudioSource sounds;
+    [SerializeField] private AudioSource sounds;
 
     [Header("          Audio Clips            ")]
     public AudioClip withIntro;
     public AudioClip noIntro;
-   /* public AudioClip sword;
-    public AudioClip playerDeath;*/
+    public AudioClip start;
+    //public AudioClip playerDeath;
 
 
     private void Start()
@@ -32,8 +32,8 @@ public class titleAudio : MonoBehaviour
         music.PlayScheduled(withIntro.length);*/
     }
     // Update is called once per frame
-    /*public void PlaySound(AudioClip clip)
+    public void PlaySound(AudioClip clip)
     {
         sounds.PlayOneShot(clip);
-    }*/
+    }
 }
