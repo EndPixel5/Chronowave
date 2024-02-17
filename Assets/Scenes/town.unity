@@ -2713,7 +2713,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2645393511762686505, guid: 0c28752737c90e94b8a1414b996408ce, type: 3}
       propertyPath: moveSpeed
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2645393511762686505, guid: 0c28752737c90e94b8a1414b996408ce, type: 3}
       propertyPath: interactIcon
