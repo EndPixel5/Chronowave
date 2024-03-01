@@ -22,7 +22,7 @@ public class NPC : MonoBehaviour
     // Update is called once per frame
     private void Start()
     {
-        NPCname.text = yer;
+        
     }
     void Update()
     {
@@ -34,6 +34,7 @@ public class NPC : MonoBehaviour
             }
             else
             {
+                NPCname.text = yer;
                 dialoguePanel.SetActive(true);
                 StartCoroutine(Typing());
             }
