@@ -73,16 +73,21 @@ public class vacuum : MonoBehaviour
         {
             Destroy(gameObject);
         }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
         if (collision.gameObject.tag == "Wall")
         {
             transform.Rotate(0, 180, 0);
             body.velocity = transform.right * speed;
         }
     }
+
+    /*private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Wall")
+        {
+            transform.Rotate(0, 180, 0);
+            body.velocity = transform.right * speed;
+        }
+    }*/
 
     /*private void OnTriggerEnter2D(Collider2D collision)
     {

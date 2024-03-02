@@ -78,20 +78,28 @@ public class bouncyguyscript : MonoBehaviour
                 {
                     collision.gameObject.GetComponent<PlayerMovement>().knockRight = false;
 
-                    facingRight =  false;
+                    //facingRight =  false;
                 }
                 else
                 {
                     collision.gameObject.GetComponent<PlayerMovement>().knockRight = true;
-                    facingRight = true;
+                    //facingRight = true;
                 }
                 collision.gameObject.GetComponent<PlayerMovement>().kbTimer = collision.gameObject.GetComponent<PlayerMovement>().kbTotalTime;
                 collision.gameObject.GetComponent<PlayerMovement>().knockback = knockbackForce;
                 collision.gameObject.GetComponent<PlayerHealth>().health -= damage;
 
             }
-            transform.Rotate(0, 180, 0);
-            body.velocity = transform.right * speed;
+            if(collision.gameObject.tag == "Wall")
+            {
+                transform.Rotate(0, 180, 0);
+                body.velocity = transform.right * speed;
+                if (facingRight == true) { facingRight = false; }
+                else { facingRight = true; }
+            }
+        
+            /*transform.Rotate(0, 180, 0);
+            body.velocity = transform.right * speed;*/
 
 
         }
@@ -119,18 +127,26 @@ public class bouncyguyscript : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        /*if (collision.gameObject.tag == "Wall")
+        {
+            if (facingRight == true) { facingRight = false; }
+            else { facingRight = true; }
+            transform.Rotate(0, 180, 0);
+            body.velocity = transform.right * speed;
+
+        }*/
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Wall")
+        /* (collision.gameObject.tag == "Wall")
         {
             if (facingRight == true) { facingRight = false; }
             else { facingRight = true; }
-           // transform.Rotate(0, 180, 0);
+            transform.Rotate(0, 180, 0);
             //body.velocity = transform.right * speed;
             
-        }
+        }*/
     }
 
     /*private void OnTriggerEnter2D(Collider2D collision)
