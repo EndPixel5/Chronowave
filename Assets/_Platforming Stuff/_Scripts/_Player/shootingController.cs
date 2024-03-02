@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.InputSystem;
 public class shootingController : MonoBehaviour
 {
     //public Transform shotPoint;
@@ -12,6 +12,8 @@ public class shootingController : MonoBehaviour
     private bool isFacingRight;
     private float Direction;
 
+    [SerializeField]
+    private InputActionReference moveInput, shootInput;
 
     private void Start()
     {
@@ -24,7 +26,7 @@ public class shootingController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Direction = Input.GetAxis("Horizontal");
+        Direction = moveInput.action.ReadValue<Vector2>().x; //Input.GetAxis("Horizontal");
         /*if(Direction < 0) { isFacingRight  = false; }
         else if(Direction > 0) { isFacingRight = true; }*/
 
@@ -40,7 +42,7 @@ public class shootingController : MonoBehaviour
 
             transform.Rotate(0, 180, 0);
         }
-        if (Input.GetAxisRaw("Fire1") > 0 && attackTimer == 0) { isShooting = true; }
+        if (shootInput.action.IsPressed() /*Input.GetAxisRaw("Fire1") > 0*/ && attackTimer == 0) { isShooting = true; }
     }
 
     void FixedUpdate()

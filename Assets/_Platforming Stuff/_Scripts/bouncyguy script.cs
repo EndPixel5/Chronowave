@@ -13,6 +13,7 @@ public class bouncyguyscript : MonoBehaviour
     private GameObject player;
     public bool isJumping = false;
     public float jumpTimer = 0;
+    public bool facingRight = true;
 
 
     //public PlayerMovement pllayeerMovement;
@@ -22,7 +23,10 @@ public class bouncyguyscript : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         //Vector3 scale = transform.localScale;
-        if (player.transform.position.x > gameObject.transform.position.x) { transform.Rotate(0, 180, 0); }//scale.x = Mathf.Abs(scale.x) * -1; }
+        if (player.transform.position.x < gameObject.transform.position.x) { 
+            transform.Rotate(0, 180, 0); 
+            facingRight = false;
+        }//scale.x = Mathf.Abs(scale.x) * -1; }
         //transform.localScale = scale;
         body.velocity = transform.right * speed;
 
@@ -31,16 +35,33 @@ public class bouncyguyscript : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-       if(isJumping == false && player.transform.position.x > gameObject.transform.position.x) { transform.Rotate(0, 180, 0); }
-       if(jumpTimer > 0) { jumpTimer--; }
-       else if(jumpTimer == 0) {
-            isJumping = true;
-            body.AddForce(new Vector2(0, jump), ForceMode2D.Impulse);
-        }
-       if (isJumping)
-        {
+      // if(isJumping == false && player.transform.position.x < gameObject.transform.position.x) { transform.Rotate(0, 180, 0); }
+       if(jumpTimer > 0 && isJumping == false) { 
+            jumpTimer--;
+            if (player.transform.position.x > gameObject.transform.position.x && facingRight == false)
+            {
+                transform.Rotate(0, 180, 0);
+                facingRight = true;
+            }
+            else if (player.transform.position.x < gameObject.transform.position.x && facingRight == true)
+            {
+                transform.Rotate(0, 180, 0);
+                facingRight = false;
+            }
 
         }
+       else if(jumpTimer == 0) {
+            
+            jumpTimer = -1;
+            isJumping = true;
+            body.velocity = transform.right * speed;
+
+            body.AddForce(new Vector2(0, jump), ForceMode2D.Impulse);
+        }
+       /*if (isJumping)
+        {
+
+        }*/
     }
 
     
@@ -56,10 +77,13 @@ public class bouncyguyscript : MonoBehaviour
                 if (collision.gameObject.transform.position.x >= transform.position.x)
                 {
                     collision.gameObject.GetComponent<PlayerMovement>().knockRight = false;
+
+                    facingRight =  false;
                 }
                 else
                 {
                     collision.gameObject.GetComponent<PlayerMovement>().knockRight = true;
+                    facingRight = true;
                 }
                 collision.gameObject.GetComponent<PlayerMovement>().kbTimer = collision.gameObject.GetComponent<PlayerMovement>().kbTotalTime;
                 collision.gameObject.GetComponent<PlayerMovement>().knockback = knockbackForce;
@@ -71,11 +95,25 @@ public class bouncyguyscript : MonoBehaviour
 
 
         }
-        if(collision.gameObject.tag == "platform")
+        if(collision.gameObject.tag == "Platform")
         {
+            /*if (player.transform.position.x > gameObject.transform.position.x)
+            {
+                transform.Rotate(0, 180, 0);
+            }*/
+            if (player.transform.position.x > gameObject.transform.position.x && facingRight == false)
+            {
+                transform.Rotate(0, 180, 0);
+                facingRight = true;
+            }
+            else if (player.transform.position.x < gameObject.transform.position.x && facingRight == true)
+            {
+                transform.Rotate(0, 180, 0);
+                facingRight = false;
+            }
             isJumping = false;
             jumpTimer = 30;
-
+            body.velocity = new Vector2(0,0);
         }
         if (collision.gameObject.tag == "Death")
         {
@@ -87,8 +125,11 @@ public class bouncyguyscript : MonoBehaviour
     {
         if (collision.gameObject.tag == "Wall")
         {
-            transform.Rotate(0, 180, 0);
-            body.velocity = transform.right * speed;
+            if (facingRight == true) { facingRight = false; }
+            else { facingRight = true; }
+           // transform.Rotate(0, 180, 0);
+            //body.velocity = transform.right * speed;
+            
         }
     }
 

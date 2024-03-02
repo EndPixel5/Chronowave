@@ -1,8 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 //using UnityEditor.Tilemaps;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -13,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     //private bool isFacingRight;
     private float direction = 1;
     public float speed;
-    public float jump;
+    public float height;
     private float Move;
 
     public float knockback;
@@ -28,7 +30,26 @@ public class PlayerMovement : MonoBehaviour
     private bool jumpCheck;
     public Animator animator;
     private float collisions;
-    
+
+    [SerializeField]
+    private  InputActionReference moveInput, jumpInput;
+
+   /* private void OnEnable()
+    {
+        jumpInput.action.performed += performJump;
+    }
+
+    private void performJump(InputAction.CallbackContext context)
+    {
+        throw new NotImplementedException();
+    }
+
+    private void OnDisable()
+    {
+        jumpInput.action.performed -= performJump;
+
+    }*/
+
     void Start()
     {
         body = gameObject.GetComponent<Rigidbody2D>();
@@ -59,13 +80,16 @@ public class PlayerMovement : MonoBehaviour
 
     void Inputs()
     {
-        Move = Input.GetAxis("Horizontal");
+        //Move = Input.GetAxis("Horizontal");
+        Move = moveInput.action.ReadValue<Vector2>().x;
         movement.x = Move;
+        //movement.x = moveInput.action.ReadValue<Vector2>().x;
         if (movement.x > 0) direction = 1;
         else if(movement.x < 0) direction = -1;
 
-        if (Input.GetButtonDown("Jump") && isJumping == false)
+        //if (Input.GetButtonDown("Jump") && isJumping == false)
         //if (Input.GetButtonDown("Jump") && jumpsUsed < 2)
+        if (jumpInput.action.triggered && isJumping == false)
         {
             jumpCheck = true;
         }
@@ -79,7 +103,7 @@ public class PlayerMovement : MonoBehaviour
             if (jumpCheck == true)
             {
                 isJumping = true;
-                body.AddForce(new Vector2(0, jump), ForceMode2D.Impulse);
+                body.AddForce(new Vector2(0, height), ForceMode2D.Impulse);
             }
             jumpCheck = false;
         }

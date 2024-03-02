@@ -2621,6 +2621,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerAttackPrefab: {fileID: 4231767459518051747, guid: 8fd5f38177bb0d6468727d84e43ab22c, type: 3}
+  moveInput: {fileID: 9160015371008395872, guid: 2f90e8452393ddf41b5a2cae7db2de5d, type: 3}
+  shootInput: {fileID: 7554390376152598091, guid: 2f90e8452393ddf41b5a2cae7db2de5d, type: 3}
 --- !u!1001 &1133502254
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2910,13 +2912,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  jump: 7.5
+  height: 0
   knockback: 2
   kbTimer: 0
   kbTotalTime: 20
   knockRight: 0
   isJumping: 0
   animator: {fileID: 1192034092}
+  moveInput: {fileID: 9160015371008395872, guid: 2f90e8452393ddf41b5a2cae7db2de5d, type: 3}
+  jumpInput: {fileID: 2718138260365135789, guid: 2f90e8452393ddf41b5a2cae7db2de5d, type: 3}
 --- !u!1 &1193843517
 GameObject:
   m_ObjectHideFlags: 0
