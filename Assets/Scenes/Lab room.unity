@@ -1526,6 +1526,83 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &867505198
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8375824436828738178, guid: d90d3434f11c2014490342870db394a7, type: 3}
+      propertyPath: NPCname
+      value: 
+      objectReference: {fileID: 51324228}
+    - target: {fileID: 8375824436828738178, guid: d90d3434f11c2014490342870db394a7, type: 3}
+      propertyPath: contButton
+      value: 
+      objectReference: {fileID: 2086387602}
+    - target: {fileID: 8375824436828738178, guid: d90d3434f11c2014490342870db394a7, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 411021521}
+    - target: {fileID: 8375824436828738178, guid: d90d3434f11c2014490342870db394a7, type: 3}
+      propertyPath: dialoguePanel
+      value: 
+      objectReference: {fileID: 644363629}
+    - target: {fileID: 8792741544874125053, guid: d90d3434f11c2014490342870db394a7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10.244131
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792741544874125053, guid: d90d3434f11c2014490342870db394a7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6591923
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792741544874125053, guid: d90d3434f11c2014490342870db394a7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792741544874125053, guid: d90d3434f11c2014490342870db394a7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792741544874125053, guid: d90d3434f11c2014490342870db394a7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792741544874125053, guid: d90d3434f11c2014490342870db394a7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792741544874125053, guid: d90d3434f11c2014490342870db394a7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792741544874125053, guid: d90d3434f11c2014490342870db394a7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792741544874125053, guid: d90d3434f11c2014490342870db394a7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792741544874125053, guid: d90d3434f11c2014490342870db394a7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8907530592577476512, guid: d90d3434f11c2014490342870db394a7, type: 3}
+      propertyPath: m_Name
+      value: science
+      objectReference: {fileID: 0}
+    - target: {fileID: 8907530592577476512, guid: d90d3434f11c2014490342870db394a7, type: 3}
+      propertyPath: m_TagString
+      value: NPC
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d90d3434f11c2014490342870db394a7, type: 3}
 --- !u!1 &1003981475
 GameObject:
   m_ObjectHideFlags: 0
@@ -3874,200 +3951,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f1f58cec809d8344a68dbc8c68d61d6, type: 3}
---- !u!1 &2005855655
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2005855657}
-  - component: {fileID: 2005855656}
-  - component: {fileID: 2005855658}
-  - component: {fileID: 2005855659}
-  - component: {fileID: 2005855660}
-  m_Layer: 0
-  m_Name: scienceboiright
-  m_TagString: NPC
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &2005855656
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2005855655}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 5bf5f707122b5a043ad603e91e2e324c, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.7111111, y: 0.7111111}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &2005855657
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2005855655}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.244131, y: 0.6591923, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &2005855658
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2005855655}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.054037094, y: -0.044211328}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.28, y: 1.28}
-    newSize: {x: 0.7111111, y: 0.7111111}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.8218689, y: 2.1512332}
-  m_EdgeRadius: 0
---- !u!114 &2005855659
+--- !u!114 &2005855659 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 8375824436828738178, guid: d90d3434f11c2014490342870db394a7, type: 3}
+  m_PrefabInstance: {fileID: 867505198}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2005855655}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 930bb4c1097a8ff4d9d3721cca1db99b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialoguePanel: {fileID: 644363629}
-  dialogueText: {fileID: 411021521}
-  NPCname: {fileID: 51324228}
-  yer: Thym Tra'avel
-  dialogue:
-  - Don't shoot! I surren- Oh, it's you, M
-  - We've gotta get outta here fast! I'm almost done with the machine, I just need
-    to put a few more parts in and it should be ready to go.
-  - One of them should be over in that locker and then other is under one of the
-    desks.
-  - Go grab them and bring them back to me, I'm gonna keep working on this.
-  - What're you standing there for? Hurry!!!
-  contButton: {fileID: 2086387602}
-  wordSpeed: 0.06
-  isPlayerClose: 0
---- !u!70 &2005855660
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2005855655}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.057156563, y: 0}
-  m_Size: {x: 0.67985535, y: 1.28}
-  m_Direction: 0
 --- !u!1 &2086387602 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2694412950873143199, guid: 79622808f746b794da1882c2832b1bf3, type: 3}
@@ -4161,7 +4055,7 @@ SceneRoots:
   - {fileID: 1625005295}
   - {fileID: 504802908}
   - {fileID: 1827307459}
-  - {fileID: 2005855657}
+  - {fileID: 867505198}
   - {fileID: 1549964101}
   - {fileID: 1455748497}
   - {fileID: 1261092978}
