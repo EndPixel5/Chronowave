@@ -526,6 +526,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 720118510754579966, guid: 79622808f746b794da1882c2832b1bf3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -549
+      objectReference: {fileID: 0}
+    - target: {fileID: 720118510754579966, guid: 79622808f746b794da1882c2832b1bf3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -514
+      objectReference: {fileID: 0}
     - target: {fileID: 993173639644416840, guid: 79622808f746b794da1882c2832b1bf3, type: 3}
       propertyPath: m_Name
       value: dialogue
@@ -536,7 +544,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7586665235148302975, guid: 79622808f746b794da1882c2832b1bf3, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -924,7 +932,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8375824436828738178, guid: d90d3434f11c2014490342870db394a7, type: 3}
       propertyPath: dialogue.Array.data[5]
-      value: This is fin, we can work with this. You go out and see what it's like
+      value: This is fine, we can work with this. You go out and see what it's like
         outside and I'll start... fixing the machine...
       objectReference: {fileID: 0}
     - target: {fileID: 8792741544874125053, guid: d90d3434f11c2014490342870db394a7, type: 3}
