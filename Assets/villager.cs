@@ -13,7 +13,7 @@ public class NPC : MonoBehaviour
     public string[] dialogue;
     private int index;
 
-
+    public Sprite image;
 
     public GameObject contButton;
     public float wordSpeed;
