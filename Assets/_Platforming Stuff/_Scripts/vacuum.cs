@@ -10,6 +10,8 @@ public class vacuum : MonoBehaviour
     public float knockbackForce;
     public Rigidbody2D body;
     private GameObject player;
+    private float kbTimer;
+    private bool knockRight;
 
 
     //public PlayerMovement pllayeerMovement;
@@ -28,6 +30,25 @@ public class vacuum : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*if (kbTimer <= 0)
+        {
+            body.velocity = transform.right * speed;
+        }
+        else
+        {
+            body.velocity = transform.right * 0;
+            if (!knockRight)
+            {
+                
+                body.velocity = new Vector2(-1, 0);
+            }
+            else
+            {
+                
+                body.velocity = new Vector2(1, 0);
+            }
+            kbTimer--;
+        }*/
         /*if(body.velocity.x < transform.right * speed)
         {
             body.velocity = transform.right * speed;
@@ -44,7 +65,7 @@ public class vacuum : MonoBehaviour
     }*/
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Player" || collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "Wall")
+        if(collision.gameObject.tag == "Player" || collision.gameObject.tag == "Enemy" /*|| collision.gameObject.tag == "Wall"*/)// || collision.gameObject.tag == "Platform")
         {
 
             //body.velocity = transform.right * speed * -1;
@@ -54,10 +75,13 @@ public class vacuum : MonoBehaviour
                 if (collision.gameObject.transform.position.x >= transform.position.x)
                 {
                     collision.gameObject.GetComponent<PlayerMovement>().knockRight = false;
+                    //knockRight = true;
                 }
                 else
                 {
                     collision.gameObject.GetComponent<PlayerMovement>().knockRight = true;
+                   // knockRight = false;
+
                 }
                 collision.gameObject.GetComponent<PlayerMovement>().kbTimer = collision.gameObject.GetComponent<PlayerMovement>().kbTotalTime;
                 collision.gameObject.GetComponent<PlayerMovement>().knockback = knockbackForce;
@@ -66,28 +90,28 @@ public class vacuum : MonoBehaviour
             }
             transform.Rotate(0, 180, 0);
             body.velocity = transform.right * speed;
-
+            //kbTimer = 2;
 
         }
         if (collision.gameObject.tag == "Death")
         {
             Destroy(gameObject);
         }
-        if (collision.gameObject.tag == "Wall" )//|| collision.gameObject.tag == "Platform")
+       /* if (collision.gameObject.tag == "Wall" )//|| collision.gameObject.tag == "Platform")
+        {
+            transform.Rotate(0, 180, 0);
+            body.velocity = transform.right * speed;
+        }*/
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "WAWAWAWA")
         {
             transform.Rotate(0, 180, 0);
             body.velocity = transform.right * speed;
         }
     }
-
-    /*private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Wall")
-        {
-            transform.Rotate(0, 180, 0);
-            body.velocity = transform.right * speed;
-        }
-    }*/
 
     /*private void OnTriggerEnter2D(Collider2D collision)
     {
