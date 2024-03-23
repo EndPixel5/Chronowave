@@ -73,7 +73,7 @@ public class vacuum : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        if (collision.gameObject.tag == "Wall")
+        if (collision.gameObject.tag == "Wall" )//|| collision.gameObject.tag == "Platform")
         {
             transform.Rotate(0, 180, 0);
             body.velocity = transform.right * speed;

@@ -15,7 +15,7 @@ GameObject:
   m_Layer: 0
   m_Name: ShooterSpawner
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -48,6 +48,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 4352666525974231186, guid: 49f7c7da4d5864c429210c08e81949ce, type: 3}
   respawnTimer: 0
+  givenDist: 0
+  onlySpawnOnce: 0
 --- !u!61 &9032075062446951703
 BoxCollider2D:
   m_ObjectHideFlags: 0
