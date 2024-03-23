@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Lab room.unity
     guid: da5feb70334c8aa46ac68e2f1e233545
   - enabled: 1
+    path: Assets/Scenes/warehouse1.unity
+    guid: 4cad2faef1f3f6642aa9b2120d6dbbbd
+  - enabled: 1
     path: Assets/Scenes/town.unity
     guid: 135819670a371bd4ab7bb5e871d16a44
   - enabled: 0
