@@ -36,6 +36,7 @@ public class NPC : MonoBehaviour
             {
                 NPCname.text = yer;
                 dialoguePanel.SetActive(true);
+                
                 StartCoroutine(Typing());
             }
 
