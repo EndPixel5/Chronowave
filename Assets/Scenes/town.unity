@@ -568,7 +568,7 @@ SpriteRenderer:
   m_SortingLayerID: 493931949
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 60ae6c272c716d54aad8e895d8bee027, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ddb22856805f5664cab54071910bd2a3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2831,7 +2831,7 @@ SpriteRenderer:
   m_SortingLayerID: 493931949
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 60ae6c272c716d54aad8e895d8bee027, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ddb22856805f5664cab54071910bd2a3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3741,7 +3741,7 @@ SpriteRenderer:
   m_SortingLayerID: 493931949
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 60ae6c272c716d54aad8e895d8bee027, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ddb22856805f5664cab54071910bd2a3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3956,7 +3956,7 @@ MonoBehaviour:
   dialogue:
   - All our houses are just grey boxes
   - I think I have black lung
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 1618d27b087ccaf4c9cd43e0bf0f3592, type: 3}
   contButton: {fileID: 440453957}
   wordSpeed: 0.03
   isPlayerClose: 0
@@ -4046,7 +4046,7 @@ SpriteRenderer:
   m_SortingLayerID: 493931949
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 60ae6c272c716d54aad8e895d8bee027, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ddb22856805f5664cab54071910bd2a3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4238,7 +4238,7 @@ SpriteRenderer:
   m_SortingLayerID: 493931949
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 60ae6c272c716d54aad8e895d8bee027, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ddb22856805f5664cab54071910bd2a3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5305,7 +5305,7 @@ MonoBehaviour:
   - I yearn for the mines
   - I'm just saying that so I don't get fired
   - I think I have black lung
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 1618d27b087ccaf4c9cd43e0bf0f3592, type: 3}
   contButton: {fileID: 440453957}
   wordSpeed: 0.03
   isPlayerClose: 0
@@ -5395,7 +5395,7 @@ SpriteRenderer:
   m_SortingLayerID: 493931949
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 60ae6c272c716d54aad8e895d8bee027, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ddb22856805f5664cab54071910bd2a3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6980,12 +6980,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 993173639644416840, guid: 79622808f746b794da1882c2832b1bf3, type: 3}
       propertyPath: m_Name
-      value: New Prefab
+      value: Miner Canvas
       objectReference: {fileID: 0}
     - target: {fileID: 3070653097656706707, guid: 79622808f746b794da1882c2832b1bf3, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5935927164975129085, guid: 79622808f746b794da1882c2832b1bf3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1618d27b087ccaf4c9cd43e0bf0f3592, type: 3}
     - target: {fileID: 7545834078105578219, guid: 79622808f746b794da1882c2832b1bf3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -7345,6 +7349,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4, y: 3}
   m_EdgeRadius: 0
+--- !u!114 &1244057067 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4809277440754968851, guid: 79622808f746b794da1882c2832b1bf3, type: 3}
+  m_PrefabInstance: {fileID: 1314002949}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1270129966
 GameObject:
   m_ObjectHideFlags: 0
@@ -7475,6 +7490,83 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4, y: 3}
   m_EdgeRadius: 0
+--- !u!1001 &1314002949
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 12786427540438061, guid: 79622808f746b794da1882c2832b1bf3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 960
+      objectReference: {fileID: 0}
+    - target: {fileID: 12786427540438061, guid: 79622808f746b794da1882c2832b1bf3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 540
+      objectReference: {fileID: 0}
+    - target: {fileID: 12786427540438061, guid: 79622808f746b794da1882c2832b1bf3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 12786427540438061, guid: 79622808f746b794da1882c2832b1bf3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 12786427540438061, guid: 79622808f746b794da1882c2832b1bf3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 12786427540438061, guid: 79622808f746b794da1882c2832b1bf3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 12786427540438061, guid: 79622808f746b794da1882c2832b1bf3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 12786427540438061, guid: 79622808f746b794da1882c2832b1bf3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 12786427540438061, guid: 79622808f746b794da1882c2832b1bf3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 12786427540438061, guid: 79622808f746b794da1882c2832b1bf3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 720118510754579966, guid: 79622808f746b794da1882c2832b1bf3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -462
+      objectReference: {fileID: 0}
+    - target: {fileID: 720118510754579966, guid: 79622808f746b794da1882c2832b1bf3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -489
+      objectReference: {fileID: 0}
+    - target: {fileID: 993173639644416840, guid: 79622808f746b794da1882c2832b1bf3, type: 3}
+      propertyPath: m_Name
+      value: Woman Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 3070653097656706707, guid: 79622808f746b794da1882c2832b1bf3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5935927164975129085, guid: 79622808f746b794da1882c2832b1bf3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c1c5b47b979d48c40b05a967ed852896, type: 3}
+    - target: {fileID: 7545834078105578219, guid: 79622808f746b794da1882c2832b1bf3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 891289723}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 79622808f746b794da1882c2832b1bf3, type: 3}
 --- !u!1 &1336184009
 GameObject:
   m_ObjectHideFlags: 0
@@ -7784,7 +7876,7 @@ SpriteRenderer:
   m_SortingLayerID: 493931949
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 60ae6c272c716d54aad8e895d8bee027, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ddb22856805f5664cab54071910bd2a3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8724,6 +8816,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1608306460 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2694412950873143199, guid: 79622808f746b794da1882c2832b1bf3, type: 3}
+  m_PrefabInstance: {fileID: 1314002949}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1630927587
 GameObject:
   m_ObjectHideFlags: 0
@@ -9408,7 +9505,7 @@ SpriteRenderer:
   m_SortingLayerID: 493931949
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 60ae6c272c716d54aad8e895d8bee027, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ddb22856805f5664cab54071910bd2a3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9776,15 +9873,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 930bb4c1097a8ff4d9d3721cca1db99b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialoguePanel: {fileID: 1844644502}
-  dialogueText: {fileID: 1099455689}
-  NPCname: {fileID: 336442199}
+  dialoguePanel: {fileID: 1866184360}
+  dialogueText: {fileID: 1244057067}
+  NPCname: {fileID: 1835052219}
   yer: Anne
   dialogue:
   - All our houses are just grey boxes
   - I think I have black lung
   image: {fileID: 0}
-  contButton: {fileID: 440453957}
+  contButton: {fileID: 1608306460}
   wordSpeed: 0.03
   isPlayerClose: 0
 --- !u!61 &1813505332
@@ -9884,10 +9981,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1835052219 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7366755841873981020, guid: 79622808f746b794da1882c2832b1bf3, type: 3}
+  m_PrefabInstance: {fileID: 1314002949}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1844644502 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7586665235148302975, guid: 79622808f746b794da1882c2832b1bf3, type: 3}
   m_PrefabInstance: {fileID: 1216938484}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1866184360 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7586665235148302975, guid: 79622808f746b794da1882c2832b1bf3, type: 3}
+  m_PrefabInstance: {fileID: 1314002949}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1875837979
 GameObject:
@@ -10539,15 +10652,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 930bb4c1097a8ff4d9d3721cca1db99b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialoguePanel: {fileID: 1844644502}
-  dialogueText: {fileID: 1099455689}
-  NPCname: {fileID: 336442199}
+  dialoguePanel: {fileID: 1866184360}
+  dialogueText: {fileID: 1244057067}
+  NPCname: {fileID: 1835052219}
   yer: Belle
   dialogue:
   - All our houses are just grey boxes
   - Have you heard of the high elves?
   image: {fileID: 0}
-  contButton: {fileID: 440453957}
+  contButton: {fileID: 1608306460}
   wordSpeed: 0.03
   isPlayerClose: 0
 --- !u!61 &2005080034
@@ -11124,6 +11237,7 @@ SceneRoots:
   - {fileID: 200943876}
   - {fileID: 624437484}
   - {fileID: 1216938484}
+  - {fileID: 1314002949}
   - {fileID: 2134082255}
   - {fileID: 1985653939}
   - {fileID: 2004515979}
