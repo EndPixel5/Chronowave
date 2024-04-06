@@ -7,7 +7,7 @@ public class ironBlastScript : MonoBehaviour
     public float speed = 5;
     public Rigidbody2D body;
     public float damage;
-    public float timeAlive = 1200;
+    public float timeAlive = 200;
     void Start()
     {
         body.velocity = transform.right * speed * -1;
@@ -38,6 +38,7 @@ public class ironBlastScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+
         if (collision.gameObject.tag == "Wall")
         {
             Destroy(gameObject);
