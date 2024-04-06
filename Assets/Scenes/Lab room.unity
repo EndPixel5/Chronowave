@@ -604,7 +604,7 @@ MonoBehaviour:
   m_Follow: {fileID: 432406879}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 6.887316
+    OrthographicSize: 8
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -1141,7 +1141,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.887316
+  orthographic size: 8
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3721,7 +3721,7 @@ MonoBehaviour:
   partsReq: 2
   partsHeld: 0
   done: 0
-  text: {fileID: 0}
+  text: {fileID: 4708508356400047909, guid: 21373e181aea98144ba923645de3ddb6, type: 3}
   textVec: {x: 0, y: 0, z: 0}
 --- !u!1 &1848439933 stripped
 GameObject:
