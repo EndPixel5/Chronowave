@@ -20,11 +20,13 @@ public class bigIronBaseScript : MonoBehaviour
     void Start()
     {
         
+
     }
-    
+
     // Update is called once per frame
     void FixedUpdate()
     {
+        //Physics2D.IgnoreLayerCollision(1, 4);
         if (attackTimer == 0)
         {
             attackChoice = Random.Range(0, 2);
@@ -59,7 +61,7 @@ public class bigIronBaseScript : MonoBehaviour
     private void steam()
     {
         Instantiate(shot, spot.transform.position, spot.transform.rotation);
-        attackTimer = 10;
+        attackTimer = 30;
        // allowPrevious = false;
     }
 
@@ -69,4 +71,12 @@ public class bigIronBaseScript : MonoBehaviour
 
         //allowPrevious = true;       
     }
+
+    /*private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Platform")
+        {
+                Physics.IgnoreCollision(GameObject.collision, collision);
+        }        
+    }*/
 }
