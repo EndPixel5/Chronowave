@@ -20,12 +20,12 @@ public class ironBlastScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Wall")
+        /*if (collision.gameObject.tag == "Wall")
         {
             Destroy(gameObject);
-        }
+        }*/
         
-        else if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player")
         {
             collision.gameObject.GetComponent<PlayerHealth>().health -= damage;
         }
@@ -34,6 +34,14 @@ public class ironBlastScript : MonoBehaviour
             timeAlive -= 50;
         }
         
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Wall")
+        {
+            Destroy(gameObject);
+        }
     }
 
 }

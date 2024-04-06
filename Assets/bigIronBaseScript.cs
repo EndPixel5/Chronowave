@@ -7,7 +7,7 @@ public class bigIronBaseScript : MonoBehaviour
 
     public GameObject shot;
     public GameObject spot;
-    private float attackTimer = 85;
+    public float attackTimer = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +26,7 @@ public class bigIronBaseScript : MonoBehaviour
         else
         {
             steam();
-            attackTimer = 900;
+            attackTimer = 85;
         }
     }
 
