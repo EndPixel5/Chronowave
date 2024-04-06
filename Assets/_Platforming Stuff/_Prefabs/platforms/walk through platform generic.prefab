@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6557855049648198081}
   - component: {fileID: 5566629734159504675}
   m_Layer: 0
-  m_Name: walk through platform
+  m_Name: walk through platform generic
   m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -17,6 +17,7 @@ TagManager:
   - part
   - textbox
   - WAWAWAWA
+  - Medium_Attack
   layers:
   - Default
   - TransparentFX
