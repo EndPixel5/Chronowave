@@ -4987,7 +4987,10 @@ MonoBehaviour:
   NPCname: {fileID: 336442199}
   yer: Matt
   dialogue:
-  - walk behind me to enter the mines... if you dare...
+  - PLEASE DON'T SHOOT!
+  - Oh, you're here to help? Thank goodness!
+  - Be careful going in there! It's crawlin' with those...things...
+  - no offense
   image: {fileID: 0}
   contButton: {fileID: 440453957}
   wordSpeed: 0.03
