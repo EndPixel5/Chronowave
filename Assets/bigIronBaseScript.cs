@@ -14,7 +14,8 @@ public class bigIronBaseScript : MonoBehaviour
     public float attackTimer = -1;
     public float attackChoice = 0;
     public bool justBeganCharge = false;
-   // private bool allowPrevious = false;
+    public float knockbackForce;
+    // private bool allowPrevious = false;
     private float prev = -100;
 
     // Start is called before the first frame update
@@ -72,6 +73,28 @@ public class bigIronBaseScript : MonoBehaviour
         justBeganCharge = true;
         attackTimer = -2;
         //allowPrevious = true;       
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            if (collision.gameObject.transform.position.x >= transform.position.x)
+            {
+                collision.gameObject.GetComponent<PlayerMovement>().knockRight = false;
+                //knockRight = true;
+            }
+            else
+            {
+                collision.gameObject.GetComponent<PlayerMovement>().knockRight = true;
+                // knockRight = false;
+
+            }
+            collision.gameObject.GetComponent<PlayerMovement>().kbTimer = collision.gameObject.GetComponent<PlayerMovement>().kbTotalTime;
+            collision.gameObject.GetComponent<PlayerMovement>().knockback = knockbackForce;
+            collision.gameObject.GetComponent<PlayerHealth>().health -= 1;
+
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
