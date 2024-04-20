@@ -101,7 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   body: {fileID: 7130890891497739505}
-  damage: 0
+  damage: 1
   timeAlive: 1200
 --- !u!70 &6720012308744821206
 CapsuleCollider2D:

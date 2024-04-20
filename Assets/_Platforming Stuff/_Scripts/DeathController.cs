@@ -8,7 +8,8 @@ public class DeathController : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player"|| collision.gameObject.tag == "Enemy")
         {
-            Destroy(collision.gameObject);
+            collision.gameObject.GetComponent<PlayerHealth>().health = 0;
+
         }
     }
 }
