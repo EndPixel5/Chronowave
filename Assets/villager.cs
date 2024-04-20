@@ -13,7 +13,7 @@ public class NPC : MonoBehaviour
     public string[] dialogue;
     private int index;
 
-    public Sprite image;
+    //public Sprite image;
 
     public GameObject contButton;
     public float wordSpeed;
@@ -22,7 +22,7 @@ public class NPC : MonoBehaviour
     // Update is called once per frame
     private void Start()
     {
-        
+        isPlayerClose = false;
     }
     void Update()
     {
@@ -30,7 +30,7 @@ public class NPC : MonoBehaviour
         {
             if (dialoguePanel.activeInHierarchy)
             {
-                ZeroText();
+                //ZeroText();
             }
             else
             {
@@ -52,6 +52,7 @@ public class NPC : MonoBehaviour
         }
 
         
+        
     }
 
     public void NextLine()
@@ -61,13 +62,17 @@ public class NPC : MonoBehaviour
         if(index < dialogue.Length)
         {
             index++;
-            dialogueText.text = "";
-            StartCoroutine(Typing());
+            if (index >= dialogue.Length)
+            {
+                ZeroText();
+            }
+            else 
+            {
+                dialogueText.text = "";
+                StartCoroutine(Typing());
+            }
         }
-        else
-        {
-            ZeroText();
-        }
+        
     }
 
     public void ZeroText()
@@ -75,11 +80,13 @@ public class NPC : MonoBehaviour
         dialogueText.text = "";
         index = 0;
         dialoguePanel.SetActive(false);
+        StopCoroutine(Typing());
     }
 
     IEnumerator Typing()
     {
-        foreach(char letter in dialogue[index].ToCharArray())
+        
+        foreach (char letter in dialogue[index].ToCharArray())
         {
             dialogueText.text += letter;
             yield return new WaitForSeconds(wordSpeed);

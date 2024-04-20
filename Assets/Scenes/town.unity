@@ -478,10 +478,9 @@ MonoBehaviour:
   - All our houses are just grey boxes
   - wait no, they've been eschered
   - I think I have black lung
-  image: {fileID: 0}
   contButton: {fileID: 440453957}
   wordSpeed: 0.03
-  isPlayerClose: 0
+  isPlayerClose: 1
 --- !u!61 &21300416
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2179,11 +2178,11 @@ PrefabInstance:
       objectReference: {fileID: 7744525809469278153, guid: 1bd57eaaca6d72a4cbd28341e69a9a0e, type: 3}
     - target: {fileID: 5238717219738963033, guid: 0c28752737c90e94b8a1414b996408ce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.82
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 5238717219738963033, guid: 0c28752737c90e94b8a1414b996408ce, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.87
+      value: -58.988415
       objectReference: {fileID: 0}
     - target: {fileID: 5238717219738963033, guid: 0c28752737c90e94b8a1414b996408ce, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2744,7 +2743,6 @@ MonoBehaviour:
   - But not recently, those damned mechanical abominations wreaking havoc upon the
     mines
   - Also, I believe I may be contracted with black lung
-  image: {fileID: 0}
   contButton: {fileID: 440453957}
   wordSpeed: 0.03
   isPlayerClose: 0
@@ -3262,7 +3260,6 @@ MonoBehaviour:
   yer: Wyatt
   dialogue:
   - Wish we had some ducks for this pond
-  image: {fileID: 0}
   contButton: {fileID: 440453957}
   wordSpeed: 0.03
   isPlayerClose: 0
@@ -3654,7 +3651,6 @@ MonoBehaviour:
   dialogue:
   - All our houses are just grey boxes
   - I think I have black lung
-  image: {fileID: 0}
   contButton: {fileID: 440453957}
   wordSpeed: 0.03
   isPlayerClose: 0
@@ -3960,7 +3956,6 @@ MonoBehaviour:
   - First I go down to the mines and get shot at by those... things...and then  I
     come back to my home and find that it's been rotated onto its side
   - Can't have anything good these days
-  image: {fileID: 21300000, guid: 1618d27b087ccaf4c9cd43e0bf0f3592, type: 3}
   contButton: {fileID: 440453957}
   wordSpeed: 0.03
   isPlayerClose: 0
@@ -4152,7 +4147,6 @@ MonoBehaviour:
   - That'd make having to go the mines every day a little more bearable...      
     I think
   - I didn't get to go to school
-  image: {fileID: 0}
   contButton: {fileID: 440453957}
   wordSpeed: 0.03
   isPlayerClose: 0
@@ -4875,7 +4869,7 @@ Transform:
   m_GameObject: {fileID: 837446506}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.036706, y: 7.5891504, z: -10}
+  m_LocalPosition: {x: 20.856707, y: -55.269264, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4991,7 +4985,6 @@ MonoBehaviour:
   - Oh, you're here to help? Thank goodness!
   - Be careful going in there! It's crawlin' with those...things...
   - no offense
-  image: {fileID: 0}
   contButton: {fileID: 440453957}
   wordSpeed: 0.03
   isPlayerClose: 0
@@ -5319,7 +5312,6 @@ MonoBehaviour:
     somethin'
   - I've got work to do, but if you go askin' round the town they'll tell you what's
     been goin' on
-  image: {fileID: 21300000, guid: 1618d27b087ccaf4c9cd43e0bf0f3592, type: 3}
   contButton: {fileID: 440453957}
   wordSpeed: 0.03
   isPlayerClose: 0
@@ -5769,7 +5761,6 @@ MonoBehaviour:
   dialogue:
   - The grass is always greener...
   - I think I have black lung
-  image: {fileID: 0}
   contButton: {fileID: 440453957}
   wordSpeed: 0.03
   isPlayerClose: 0
@@ -7170,7 +7161,7 @@ Transform:
   m_GameObject: {fileID: 1229691717}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.036706, y: 7.5891504, z: -10}
+  m_LocalPosition: {x: 20.856707, y: -55.269264, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7564,6 +7555,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Woman Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 2694412950873143199, guid: 79622808f746b794da1882c2832b1bf3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3070653097656706707, guid: 79622808f746b794da1882c2832b1bf3, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -7576,6 +7571,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 891289723}
+    - target: {fileID: 7586665235148302975, guid: 79622808f746b794da1882c2832b1bf3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7804,7 +7803,6 @@ MonoBehaviour:
   - I haven't been down in days, they been shootin' at anybody gets close to 'em
   - Which has been a real pain in my backside on account of I left my keys down there
     and now I can't get back in my house
-  image: {fileID: 0}
   contButton: {fileID: 440453957}
   wordSpeed: 0.03
   isPlayerClose: 0
@@ -8800,7 +8798,6 @@ MonoBehaviour:
   - I lost my favorite canary in a mine collapse a few weeks ago, you'll be missed
     Carbon Monoxide Detector Canary #2635
   - I think I have black lung
-  image: {fileID: 0}
   contButton: {fileID: 440453957}
   wordSpeed: 0.03
   isPlayerClose: 0
@@ -9526,7 +9523,6 @@ MonoBehaviour:
   dialogue:
   - You've got money? I've got wares!
   - Not yet though, one day I will
-  image: {fileID: 0}
   contButton: {fileID: 440453957}
   wordSpeed: 0.03
   isPlayerClose: 0
@@ -9991,7 +9987,6 @@ MonoBehaviour:
   dialogue:
   - All our houses are just grey boxes
   - I think I have black lung
-  image: {fileID: 0}
   contButton: {fileID: 1608306460}
   wordSpeed: 0.03
   isPlayerClose: 0
@@ -10782,7 +10777,6 @@ MonoBehaviour:
   dialogue:
   - All our houses are just grey boxes
   - Have you heard of the high elves?
-  image: {fileID: 0}
   contButton: {fileID: 1608306460}
   wordSpeed: 0.03
   isPlayerClose: 0
@@ -11346,7 +11340,6 @@ MonoBehaviour:
     through the darkness...]'
   - '[The ground shifts beneath your feet]'
   - You should leave
-  image: {fileID: 0}
   contButton: {fileID: 1456934056}
   wordSpeed: 0.03
   isPlayerClose: 1
@@ -11433,13 +11426,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialoguePanel: {fileID: 1866184360}
-  dialogueText: {fileID: 1244057067}
-  NPCname: {fileID: 1835052219}
+  dialogueText: {fileID: 1099455689}
+  NPCname: {fileID: 336442199}
   yer: Anne
   dialogue:
   - All our houses are just grey boxes
   - I think I have black lung
-  image: {fileID: 0}
   contButton: {fileID: 1608306460}
   wordSpeed: 0.03
   isPlayerClose: 0
