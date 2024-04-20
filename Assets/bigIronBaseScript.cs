@@ -11,7 +11,7 @@ public class bigIronBaseScript : MonoBehaviour
     public GameObject spot;
     public float speed = -5;
     public Rigidbody2D body;
-    public float attackTimer = -1;
+    public float attackTimer = 10;
     public float attackChoice = 0;
     public bool justBeganCharge = false;
     public float knockbackForce;
