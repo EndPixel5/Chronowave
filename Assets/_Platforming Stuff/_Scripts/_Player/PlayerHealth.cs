@@ -28,7 +28,7 @@ public class PlayerHealth : MonoBehaviour
         if (health <= 0) 
         {
             /*Destroy(gameObject);*/
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            SceneManager.LoadScene("game over");
             //health = maxHealth;
             //transform.position = startPos;
         }

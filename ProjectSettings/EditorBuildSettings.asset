@@ -20,10 +20,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/town.unity
     guid: 135819670a371bd4ab7bb5e871d16a44
-  - enabled: 0
-    path: Assets/Scenes/Thanks.unity
-    guid: f092e952d2ff8bb49b69c2aa0f7da413
   - enabled: 1
     path: Assets/Scenes/coall mine Platforming.unity
     guid: 3f79463bcd7f70344988de432548ec10
+  - enabled: 1
+    path: Assets/Scenes/game over.unity
+    guid: d3c55272f8da00f478707111299f69b9
+  - enabled: 0
+    path: Assets/Scenes/Thanks.unity
+    guid: f092e952d2ff8bb49b69c2aa0f7da413
   m_configObjects: {}

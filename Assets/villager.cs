@@ -12,7 +12,7 @@ public class NPC : MonoBehaviour
     public string yer;
     public string[] dialogue;
     private int index;
-
+    private char[] hugh;
     //public Sprite image;
 
     public GameObject contButton;
@@ -31,12 +31,13 @@ public class NPC : MonoBehaviour
             if (dialoguePanel.activeInHierarchy)
             {
                 //ZeroText();
+                dialogueText.text = null;
             }
             else
             {
                 NPCname.text = yer;
                 dialoguePanel.SetActive(true);
-                
+                dialogueText.text = null;
                 StartCoroutine(Typing());
             }
 
@@ -85,8 +86,8 @@ public class NPC : MonoBehaviour
 
     IEnumerator Typing()
     {
-        
-        foreach (char letter in dialogue[index].ToCharArray())
+        hugh = dialogue[index].ToCharArray();
+        foreach (char letter in hugh)
         {
             dialogueText.text += letter;
             yield return new WaitForSeconds(wordSpeed);
@@ -108,6 +109,8 @@ public class NPC : MonoBehaviour
         {
             isPlayerClose = false;
             ZeroText();
+            hugh = new char[0];
+            
         }
     }
 }

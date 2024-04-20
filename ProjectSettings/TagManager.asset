@@ -18,6 +18,8 @@ TagManager:
   - textbox
   - WAWAWAWA
   - Medium_Attack
+  - combat
+  - gameOver
   layers:
   - Default
   - TransparentFX
