@@ -4620,6 +4620,7 @@ MonoBehaviour:
   attackTimer: -1
   attackChoice: 0
   justBeganCharge: 0
+  knockbackForce: 10
 --- !u!1 &1556740296
 GameObject:
   m_ObjectHideFlags: 0
@@ -5379,8 +5380,8 @@ MonoBehaviour:
   - {fileID: 1772108669}
   - {fileID: 1355885637}
   sounds: {fileID: 0}
-  withIntro: {fileID: 8300000, guid: 9e2a200964ede484692191e4095ef967, type: 3}
-  noIntro: {fileID: 8300000, guid: 99c203a8fcc799a448c69a1bdc2027f5, type: 3}
+  withIntro: {fileID: 8300000, guid: 8db203a4ed274e146b66fc69dfa38d4e, type: 3}
+  noIntro: {fileID: 8300000, guid: 03d3be503b74b7c41a5555e4614c48ac, type: 3}
   start: {fileID: 0}
 --- !u!4 &2100368852
 Transform:
