@@ -17,11 +17,12 @@ public class bigIronBaseScript : MonoBehaviour
     public float knockbackForce;
     // private bool allowPrevious = false;
     private float prev = -100;
+    private AudioSource blastSound;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        blastSound = GetComponent<AudioSource>();
 
     }
 
@@ -63,6 +64,7 @@ public class bigIronBaseScript : MonoBehaviour
     private void steam()
     {
         Instantiate(shot, spot.transform.position, spot.transform.rotation);
+        blastSound.Play();
         attackTimer = 30;
        // allowPrevious = false;
     }
@@ -93,6 +95,8 @@ public class bigIronBaseScript : MonoBehaviour
             collision.gameObject.GetComponent<PlayerMovement>().kbTimer = collision.gameObject.GetComponent<PlayerMovement>().kbTotalTime;
             collision.gameObject.GetComponent<PlayerMovement>().knockback = knockbackForce;
             collision.gameObject.GetComponent<PlayerHealth>().health -= 1;
+            body.velocity = transform.right * speed;
+
 
         }
     }
@@ -107,6 +111,7 @@ public class bigIronBaseScript : MonoBehaviour
                 body.velocity *= 0;
                 transform.Rotate(0, 180, 0);
                 attackTimer = 45;
+
             }
         }
     }
