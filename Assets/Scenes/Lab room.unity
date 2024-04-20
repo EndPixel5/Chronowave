@@ -1539,6 +1539,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 51324228}
     - target: {fileID: 8375824436828738178, guid: d90d3434f11c2014490342870db394a7, type: 3}
+      propertyPath: wordSpeed
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 8375824436828738178, guid: d90d3434f11c2014490342870db394a7, type: 3}
       propertyPath: contButton
       value: 
       objectReference: {fileID: 2086387602}
@@ -1550,6 +1554,10 @@ PrefabInstance:
       propertyPath: dialoguePanel
       value: 
       objectReference: {fileID: 644363629}
+    - target: {fileID: 8375824436828738178, guid: d90d3434f11c2014490342870db394a7, type: 3}
+      propertyPath: isPlayerClose
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8792741544874125053, guid: d90d3434f11c2014490342870db394a7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.244131

@@ -542,6 +542,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5935927164975129085, guid: 79622808f746b794da1882c2832b1bf3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 14666dc0480dc3647ae337bc7e688c52, type: 3}
     - target: {fileID: 7586665235148302975, guid: 79622808f746b794da1882c2832b1bf3, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1120,6 +1124,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 271320454}
     - target: {fileID: 8375824436828738178, guid: d90d3434f11c2014490342870db394a7, type: 3}
+      propertyPath: wordSpeed
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 8375824436828738178, guid: d90d3434f11c2014490342870db394a7, type: 3}
       propertyPath: contButton
       value: 
       objectReference: {fileID: 2115243426}
@@ -1131,6 +1139,10 @@ PrefabInstance:
       propertyPath: dialoguePanel
       value: 
       objectReference: {fileID: 1283280607}
+    - target: {fileID: 8375824436828738178, guid: d90d3434f11c2014490342870db394a7, type: 3}
+      propertyPath: isPlayerClose
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8375824436828738178, guid: d90d3434f11c2014490342870db394a7, type: 3}
       propertyPath: dialogue.Array.size
       value: 6

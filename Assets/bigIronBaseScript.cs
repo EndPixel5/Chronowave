@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using static UnityEngine.RuleTile.TilingRuleOutput;
 
 
@@ -122,4 +124,9 @@ public class bigIronBaseScript : MonoBehaviour
                 Physics.IgnoreCollision(GameObject.collision, collision);
         }        
     }*/
+
+    private void OnDestroy()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
 }

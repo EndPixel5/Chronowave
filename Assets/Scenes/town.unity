@@ -2178,11 +2178,11 @@ PrefabInstance:
       objectReference: {fileID: 7744525809469278153, guid: 1bd57eaaca6d72a4cbd28341e69a9a0e, type: 3}
     - target: {fileID: 5238717219738963033, guid: 0c28752737c90e94b8a1414b996408ce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 94.2
+      value: -0.45
       objectReference: {fileID: 0}
     - target: {fileID: 5238717219738963033, guid: 0c28752737c90e94b8a1414b996408ce, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -79.3
+      value: 4.14
       objectReference: {fileID: 0}
     - target: {fileID: 5238717219738963033, guid: 0c28752737c90e94b8a1414b996408ce, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4844,7 +4844,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.8873158
+  orthographic size: 6.887316
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -4869,7 +4869,7 @@ Transform:
   m_GameObject: {fileID: 837446506}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.638378, y: -2.870845, z: -10}
+  m_LocalPosition: {x: -0.45, y: 7.8591504, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5094,7 +5094,7 @@ Transform:
   m_GameObject: {fileID: 837995506}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 63.38, y: -72.42, z: 0}
+  m_LocalPosition: {x: 96.01, y: -77.65, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7417,7 +7417,7 @@ Transform:
   m_GameObject: {fileID: 1229691717}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 94.2, y: -75.58086, z: -10}
+  m_LocalPosition: {x: -0.45, y: 7.8591504, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11735,7 +11735,7 @@ MonoBehaviour:
   NPCname: {fileID: 1890639041}
   yer: House
   dialogue:
-  - '[You look into the window of the house and see two eyes staring abck at you
+  - '[You look into the window of the house and see two eyes staring back at you
     through the darkness...]'
   - '[The ground shifts beneath your feet]'
   - You should leave
