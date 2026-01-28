@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class basicEnemyShotScript : MonoBehaviour
 {
-    public float speed = 4;
+    public float speed = 5;
     public Rigidbody2D body;
     public float damage;
     public float timeAlive = 1200;
@@ -26,7 +26,7 @@ public class basicEnemyShotScript : MonoBehaviour
             collision.gameObject.GetComponent<PlayerHealth>().health -= damage;
             Destroy(gameObject);
         }
-        else if (collision.gameObject.tag == "Player_Attack" || collision.gameObject.tag == "Platform")
+        else if (collision.gameObject.tag == "Player_Attack")// || collision.gameObject.tag == "Platform")
         {
             Destroy(gameObject);
         }
