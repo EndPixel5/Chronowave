@@ -54,7 +54,7 @@ public class shootingController : MonoBehaviour
         //if(Direction == 1 && )
         if (attackTimer > 0) { attackTimer--; }
         if (specialTimer > 0) {  specialTimer--; }
-        else if (specialTimer == 0) { specialTimer = 35; }
+        else if (specialTimer == 0) { specialTimer = 7; }
         if (isShooting)
         {
             /*if (specialTimer == 0) { SpecialShoot(); }
