@@ -6,8 +6,11 @@ public class shootingController : MonoBehaviour
 {
     //public Transform shotPoint;
     public GameObject playerAttackPrefab;
+    public GameObject strongPlayerAttackPrefab;
+
     private bool isShooting;
     private float attackTimer;
+    private float specialTimer;
    // public GameObject player;
     private bool isFacingRight;
     private float Direction;
@@ -18,6 +21,7 @@ public class shootingController : MonoBehaviour
     private void Start()
     {
         attackTimer = 0;
+        specialTimer = 0;
         isFacingRight = true;
         Direction = 1;
 
@@ -49,8 +53,12 @@ public class shootingController : MonoBehaviour
     {
         //if(Direction == 1 && )
         if (attackTimer > 0) { attackTimer--; }
+        if (specialTimer > 0) {  specialTimer--; }
+        else if (specialTimer == 0) { specialTimer = 7; }
         if (isShooting)
         {
+            /*if (specialTimer == 0) { SpecialShoot(); }
+            else { Shoot(); }*/
             Shoot();
         }
         isShooting=false;
@@ -58,7 +66,16 @@ public class shootingController : MonoBehaviour
 
     void Shoot()
     {
-        Instantiate(playerAttackPrefab, gameObject.transform.position, gameObject.transform.rotation);
+        if (specialTimer == 0)
+        {
+            Instantiate(strongPlayerAttackPrefab, gameObject.transform.position, gameObject.transform.rotation);
+        }
+        else { Instantiate(playerAttackPrefab, gameObject.transform.position, gameObject.transform.rotation); }
         attackTimer = 20;
     }
+   /* void SpecialShoot()
+    {
+        Instantiate(strongPlayerAttackPrefab, gameObject.transform.position, gameObject.transform.rotation);
+        attackTimer = 20;
+    }*/
 }
