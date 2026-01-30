@@ -16,19 +16,19 @@ public class MenuScript : MonoBehaviour
     {
         if (isPaused == true)
         {
-            if (Input.GetKey("escape") && stopInstaQuit <= 0)
+            if (Input.GetKey("q"))
             {
                 Application.Quit();
             }
-            else if (Input.GetKey(KeyCode.Space) || Input.GetMouseButton(0))
+            else if (Input.GetKey("escape") && stopInstaQuit <= 0 || Input.GetMouseButton(0))
             {
                 TDResume();
             }
         }
-        else if (Input.GetKey("escape"))
+        else if (Input.GetKeyDown("escape"))
         {
             TDPause();
-            stopInstaQuit = 26;
+            stopInstaQuit = 100;
         }
         stopInstaQuit--;
     }
