@@ -30,8 +30,8 @@ public class NPC : MonoBehaviour
         {
             if (dialoguePanel.activeInHierarchy)
             {
-                //ZeroText();
-                dialogueText.text = null;
+                ZeroText();
+                //isPlayerClose = false;
             }
             else
             {
