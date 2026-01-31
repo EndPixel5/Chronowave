@@ -4726,14 +4726,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 930bb4c1097a8ff4d9d3721cca1db99b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialoguePanel: {fileID: 0}
-  dialogueText: {fileID: 0}
-  NPCname: {fileID: 0}
+  dialoguePanel: {fileID: 1570849299}
+  dialogueText: {fileID: 493778459}
+  NPCname: {fileID: 1965171661}
   yer: Anne
   dialogue:
   - All our houses are just grey boxes
   - I think I have black lung
-  contButton: {fileID: 0}
+  contButton: {fileID: 434207501}
   wordSpeed: 0.03
   isPlayerClose: 0
 --- !u!61 &1474589373
@@ -5373,6 +5373,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1998626424}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1570849299 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3070653097656706707, guid: 79622808f746b794da1882c2832b1bf3, type: 3}
+  m_PrefabInstance: {fileID: 1438410996}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1615123596
 GameObject:
   m_ObjectHideFlags: 0
