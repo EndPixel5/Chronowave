@@ -5,33 +5,32 @@ using UnityEngine.InputSystem;
 
 public class PauseMenuScript : MonoBehaviour
 {
-    [SerializeField]
-    private InputActionReference shootInput;
-
+    
     public static bool isPaused = false;
     public GameObject PauseMenu;
-    private int stopInstaQuit;
+    private int stopInsta;
     // Update is called once per frame
     void Update()
     {
-        if (isPaused == true)
+        if (Input.GetKey("q") && isPaused)
         {
-            if(Input.GetKey("escape") && stopInstaQuit <= 0)
+            Application.Quit();
+        }
+        if (Input.GetKey("escape") && stopInsta <=0)
+        {
+            if (isPaused == true)
             {
-                    Application.Quit();
-            }
-            else if (shootInput.action.IsPressed())
-            {
+                //Pause();
                 Resume();
             }
+            else// if (stopInstaResume <= 0)
+            {
+                //Resume();
+                Pause();
+            }
         }
-
-        else if (Input.GetKey("escape"))
-        {
-            Pause();
-            stopInstaQuit = 26;
-        }
-        stopInstaQuit--;
+        stopInsta--;
+              
     }
 
     void Pause()
@@ -39,6 +38,7 @@ public class PauseMenuScript : MonoBehaviour
         PauseMenu.SetActive(true);
         Time.timeScale = 0;
         isPaused = true;
+        stopInsta = 50;
     }
 
     private void Resume()
@@ -46,5 +46,6 @@ public class PauseMenuScript : MonoBehaviour
         PauseMenu.SetActive(false);
         Time.timeScale = 1;
         isPaused = false;
+        stopInsta = 50;
     }
 }

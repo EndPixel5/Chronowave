@@ -1332,7 +1332,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1542132534}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37b77d88a4b010f40a02a8ed10381afd, type: 3}
+  m_Script: {fileID: 11500000, guid: 601d1bc61106a7e4bb4f38eb9ff6406d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PauseMenu: {fileID: 741428756}
@@ -1435,6 +1435,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2645393511762686505, guid: 0c28752737c90e94b8a1414b996408ce, type: 3}
+      propertyPath: interactIcon
+      value: 
+      objectReference: {fileID: 7744525809469278153, guid: 1bd57eaaca6d72a4cbd28341e69a9a0e, type: 3}
     - target: {fileID: 5238717219738963033, guid: 0c28752737c90e94b8a1414b996408ce, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.84
