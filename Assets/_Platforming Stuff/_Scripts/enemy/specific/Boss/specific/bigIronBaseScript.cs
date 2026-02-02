@@ -125,8 +125,8 @@ public class bigIronBaseScript : MonoBehaviour
         }        
     }*/
 
-    private void OnDestroy()
+    /*private void OnDestroy()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    }
+    }*/
 }

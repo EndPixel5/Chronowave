@@ -29,6 +29,12 @@ public class strongbasicAttackController : MonoBehaviour
 
             Destroy(gameObject);
         }
+        else if (collision.gameObject.tag == "Boss")
+        {
+            collision.gameObject.GetComponent<BossHealth>().health -= damage;
+
+            Destroy(gameObject);
+        }
         else if (/*collision.gameObject.tag == "Weak_Attack" || collision.gameObject.tag == "Weak_Attack" || */ collision.gameObject.tag == "Death")
         {
             Destroy(gameObject);
