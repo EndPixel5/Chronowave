@@ -10,7 +10,7 @@ public class shootingController : MonoBehaviour
 
     private bool isShooting;
     private float attackTimer;
-    public newSpecialScript special;
+    public specialWaveScript special;
     //private float specialTimer;
    // public GameObject player;
     private bool isFacingRight;
