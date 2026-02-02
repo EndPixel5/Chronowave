@@ -3747,7 +3747,7 @@ MonoBehaviour:
   partsReq: 2
   partsHeld: 0
   done: 0
-  text: {fileID: 4708508356400047909, guid: 21373e181aea98144ba923645de3ddb6, type: 3}
+  text: {fileID: 6464034226338109612, guid: 8ee7da647b3850d46ae07428e793599b, type: 3}
   textVec: {x: 0, y: 0, z: 0}
 --- !u!1 &1839067997
 GameObject:
