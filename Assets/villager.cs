@@ -26,7 +26,7 @@ public class NPC : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && isPlayerClose) 
+        /*if (Input.GetKeyDown(KeyCode.E) && isPlayerClose) 
         {
             if (dialoguePanel.activeInHierarchy)
             {
@@ -41,9 +41,21 @@ public class NPC : MonoBehaviour
                 StartCoroutine(Typing());
             }
 
+        }*/
+        if (Input.GetKeyDown(KeyCode.E) && isPlayerClose)
+        {
+            if (!dialoguePanel.activeInHierarchy)
+            {
+                //ZeroText();
+                NPCname.text = yer;
+                dialoguePanel.SetActive(true);
+                dialogueText.text = null;
+                StartCoroutine("Typing");
+            }
+
         }
 
-        if(dialogueText.text == dialogue[index])
+        if (dialogueText.text == dialogue[index])
         {
             contButton.SetActive(true);
             if(Input.GetKeyDown(KeyCode.Space))
@@ -52,7 +64,7 @@ public class NPC : MonoBehaviour
             }
         }
 
-        
+        //if(!isPlayerClose) { ZeroText(); }  
         
     }
 
@@ -70,7 +82,7 @@ public class NPC : MonoBehaviour
             else 
             {
                 dialogueText.text = "";
-                StartCoroutine(Typing());
+                StartCoroutine("Typing");
             }
         }
         
@@ -78,10 +90,12 @@ public class NPC : MonoBehaviour
 
     public void ZeroText()
     {
+        StopCoroutine("Typing");
         dialogueText.text = "";
         index = 0;
         dialoguePanel.SetActive(false);
-        StopCoroutine(Typing());
+        
+        Debug.Log("stop");
     }
 
     IEnumerator Typing()
@@ -100,6 +114,7 @@ public class NPC : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             isPlayerClose = true;
+            ZeroText();
         }
     }
 
@@ -107,10 +122,9 @@ public class NPC : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            isPlayerClose = false;
             ZeroText();
-            hugh = new char[0];
-            
+            Debug.Log("leave");
+            isPlayerClose = false;
         }
     }
 }
