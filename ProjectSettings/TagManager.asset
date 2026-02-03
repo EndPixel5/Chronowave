@@ -20,6 +20,7 @@ TagManager:
   - Medium_Attack
   - combat
   - gameOver
+  - Boss
   layers:
   - Default
   - TransparentFX

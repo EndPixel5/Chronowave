@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class DemoScript : MonoBehaviour
 {
     private bool begin = false;
-
+    private int allowContinue = 50;
 
     private void Start()
     {
@@ -18,14 +18,18 @@ public class DemoScript : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetAxisRaw("Fire1") != 0 && begin == false)
+        if (Input.GetAxisRaw("Fire1") != 0 && begin == false && allowContinue>0)
         {
             begin = true;
             //audioManager.PlaySound(audioManager.sword);
 
             //Debug.Log("shmack");
         }
-
+        if (Input.GetKey("escape"))
+        {
+            Application.Quit();
+        }
+        allowContinue--;
     }
     private void FixedUpdate()
     {
