@@ -8,6 +8,7 @@ public class PauseMenuScript : MonoBehaviour
     
     public static bool isPaused = false;
     public GameObject PauseMenu;
+    public GameObject PauseText;
     //private int stopInsta;
     // Update is called once per frame
     void Update()
@@ -36,6 +37,7 @@ public class PauseMenuScript : MonoBehaviour
     void Pause()
     {
         PauseMenu.SetActive(true);
+        PauseText.SetActive(true);
         Time.timeScale = 0;
         isPaused = true;
         //stopInsta = 50;
@@ -44,6 +46,7 @@ public class PauseMenuScript : MonoBehaviour
     private void Resume()
     {
         PauseMenu.SetActive(false);
+        PauseText.SetActive(false);
         Time.timeScale = 1;
         isPaused = false;
         //stopInsta = 50;
