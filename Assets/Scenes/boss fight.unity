@@ -2295,7 +2295,7 @@ GameObject:
   - component: {fileID: 938717503}
   - component: {fileID: 938717502}
   - component: {fileID: 938717501}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: pausertexr
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8241,7 +8241,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 188053421
   m_SortingLayer: 2
-  m_SortingOrder: 100
+  m_SortingOrder: 3
   m_Sprite: {fileID: 0}
   m_Color: {r: 0.26415092, g: 0.26415092, b: 0.26415092, a: 0.69411767}
   m_FlipX: 0

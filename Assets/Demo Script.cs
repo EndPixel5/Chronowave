@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class DemoScript : MonoBehaviour
 {
-    private bool begin = false;
-    private int allowContinue = 50;
+    //[SerializeField] bool begin = false;
+
+    [SerializeField] InputActionReference shootInput;
+    [SerializeField] int allowContinue = 70;
 
     private void Start()
     {
@@ -18,9 +21,11 @@ public class DemoScript : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetAxisRaw("Fire1") != 0 && begin == false && allowContinue>0)
+        if (shootInput.action.IsPressed() /*&& begin == false */&& allowContinue<0)
         {
-            begin = true;
+            SceneManager.LoadScene(0);
+
+            //begin = true;
             //audioManager.PlaySound(audioManager.sword);
 
             //Debug.Log("shmack");
@@ -31,11 +36,11 @@ public class DemoScript : MonoBehaviour
         }
         allowContinue--;
     }
-    private void FixedUpdate()
+    /*private void FixedUpdate()
     {
         if (begin)
         {
             SceneManager.LoadScene(0);
         }
-    }
+    }*/
 }

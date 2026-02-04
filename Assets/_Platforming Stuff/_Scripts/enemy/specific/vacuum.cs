@@ -106,7 +106,7 @@ public class vacuum : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "WAWAWAWA")
+        if (collision.gameObject.tag == "WAWAWAWA" || collision.gameObject.tag == "part")
         {
             transform.Rotate(0, 180, 0);
             body.velocity = transform.right * speed;
